@@ -87,5 +87,21 @@ def fetchNewsInfo(List):
         allNews.append(news)
     return 
 
+def turnToCSV():
+    try:
+        existing_data = pd.read_csv("more.csv")
+    except FileNotFoundError:
+        existing_data = pd.DataFrame()
+
+    # Appending new data to existing DataFrame
+    df = pd.concat([existing_data, pd.DataFrame(allNews)])
+
+    # Removing duplicates based on article title
+    df.drop_duplicates(subset='article_title', keep='first', inplace=True)
+
+    df.to_csv("more.csv", index=False)
+
+
 with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(fetchNewsInfo,extractNews(openWebPage("https://finance.yahoo.com/quote/AAPL/news")))
+turnToCSV()
