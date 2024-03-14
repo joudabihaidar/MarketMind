@@ -89,7 +89,7 @@ def fetchNewsInfo(List):
 
 def turnToCSV():
     try:
-        existing_data = pd.read_csv("more.csv")
+        existing_data = pd.read_csv("News.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
 
@@ -99,7 +99,7 @@ def turnToCSV():
     # Removing duplicates based on article title
     df.drop_duplicates(subset='article_title', keep='first', inplace=True)
 
-    df.to_csv("more.csv", index=False)
+    df.to_csv("News.csv", index=False)
 
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
