@@ -81,11 +81,11 @@ def fetchNewsInfo(List):
             'article_title': article.find('a').text,  # Corrected line
             'article': paragraph,
             'source_name': 'Yahoo Finance',
-            'source_link': 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
+            'source_link': link
         }
 
         allNews.append(news)
     return 
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    executor.map(fetchNewsInfo,extractNews)
+    executor.map(fetchNewsInfo,extractNews(openWebPage("https://finance.yahoo.com/quote/AAPL/news")))
