@@ -20,3 +20,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
+def openWebPage(url):
+    """
+    Opens a web page specified by the URL using a WebDriver instance.
+
+    The WebDriver instance returned, allows you to automate interactions with the web page.
+    """
+    driver=webdriver.Chrome()
+    driver.get(url)
+    time.sleep(3)
+    return driver
