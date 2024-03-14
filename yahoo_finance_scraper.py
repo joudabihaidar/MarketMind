@@ -30,3 +30,31 @@ def openWebPage(url):
     driver.get(url)
     time.sleep(3)
     return driver
+
+def extractArticles(driver,n):
+    """
+    Scraping n articles from the web page using the WebDriver instance.
+
+    It returns a list of article elements found while scrolling through the page.
+    """
+    # The maximum number of articles we can scarpe is 160:
+    if n>160:
+        n=160
+
+    # Finding the <body> element to enable scrolling:
+    element=driver.find_element(By.TAG_NAME,'body')
+
+    while len(articlesList)<n:
+        # Scrolling down the web page by sending PAGE_DOWN key.
+        element.send_keys(Keys.PAGE_DOWN)
+
+        # Extracting the page source and parsing it with BeautifulSoup:
+        page_source = driver.page_source
+        soup = BeautifulSoup(page_source, 'html.parser')
+
+        # Extracting the articles.
+        articlesList=soup.find('ul',{'class':'My(0) P(0) Wow(bw) Ov(h)'}).find_all('h3',{'class':'Mb(5px)'})
+
+        time.sleep(3)
+    driver.quit()
+    return articlesList
