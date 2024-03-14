@@ -52,9 +52,38 @@ def extractArticles(driver,n):
         page_source = driver.page_source
         soup = BeautifulSoup(page_source, 'html.parser')
 
-        # Extracting the articles.
+        # The list of article elements:
         articlesList=soup.find('ul',{'class':'My(0) P(0) Wow(bw) Ov(h)'}).find_all('h3',{'class':'Mb(5px)'})
 
         time.sleep(3)
     driver.quit()
     return articlesList
+
+def fetchNewsInfo(List):
+    headers={
+        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
+    }
+    allNews=[]
+    for article in List:
+        link = 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
+        
+        r = requests.get(link, headers=headers)
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
+
+        paragraph = ''
+
+        for p in articles:
+            paragraph += p.text
+        print(article.find('a').text)
+        news = {
+            'Date': soup.find('time')['datetime'],
+            'article_title': article.find('a').text,  # Corrected line
+            'article': paragraph,
+            'source_name': 'Yahoo Finance',
+            'source_link': 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
+        }
+
+        allNews.append(news)
+    return allNews
