@@ -19,6 +19,12 @@ from bs4 import BeautifulSoup
 # Importing the pandas library for data manipulation with the alias pd.
 import pandas as pd
 
+import concurrent.futures
+
+headers={
+    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
+}
+allNews=[]
 
 def openWebPage(url):
     """
@@ -31,20 +37,17 @@ def openWebPage(url):
     time.sleep(3)
     return driver
 
-def extractArticles(driver,n):
+def extractNews(driver):
     """
-    Scraping n articles from the web page using the WebDriver instance.
+    Scraping n number of news from the web page using the WebDriver instance.
 
     It returns a list of article elements found while scrolling through the page.
     """
-    # The maximum number of articles we can scarpe is 160:
-    if n>160:
-        n=160
 
     # Finding the <body> element to enable scrolling:
     element=driver.find_element(By.TAG_NAME,'body')
 
-    while len(articlesList)<n:
+    while len(articlesList)<100:
         # Scrolling down the web page by sending PAGE_DOWN key.
         element.send_keys(Keys.PAGE_DOWN)
 
@@ -60,10 +63,6 @@ def extractArticles(driver,n):
     return articlesList
 
 def fetchNewsInfo(List):
-    headers={
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
-    }
-    allNews=[]
     for article in List:
         link = 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
         
@@ -86,4 +85,7 @@ def fetchNewsInfo(List):
         }
 
         allNews.append(news)
-    return allNews
+    return 
+
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    executor.map(fetchNewsInfo,extractNews)
