@@ -21,6 +21,7 @@ import pandas as pd
 
 import concurrent.futures
 
+url="https://finance.yahoo.com/quote/AAPL/news"
 headers={
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
 }
@@ -43,7 +44,7 @@ def extractNews(driver):
 
     It returns a list of article elements found while scrolling through the page.
     """
-
+    articlesList=[]
     # Finding the <body> element to enable scrolling:
     element=driver.find_element(By.TAG_NAME,'body')
 
@@ -57,34 +58,33 @@ def extractNews(driver):
 
         # The list of article elements:
         articlesList=soup.find('ul',{'class':'My(0) P(0) Wow(bw) Ov(h)'}).find_all('h3',{'class':'Mb(5px)'})
-
+        print(len(articlesList))
         time.sleep(3)
     driver.quit()
     return articlesList
 
-def fetchNewsInfo(List):
-    for article in List:
-        link = 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
-        
-        r = requests.get(link, headers=headers)
-        soup = BeautifulSoup(r.text, 'html.parser')
+def fetchNewsInfo(article):
+    link = 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
+    
+    r = requests.get(link, headers=headers)
+    soup = BeautifulSoup(r.text, 'html.parser')
 
-        articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
+    articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
 
-        paragraph = ''
+    paragraph = ''
 
-        for p in articles:
-            paragraph += p.text
-        print(article.find('a').text)
-        news = {
-            'Date': soup.find('time')['datetime'],
-            'article_title': article.find('a').text,  # Corrected line
-            'article': paragraph,
-            'source_name': 'Yahoo Finance',
-            'source_link': link
-        }
+    for p in articles:
+        paragraph += p.text
+    print(article.find('a').text)
+    news = {
+        'Date': soup.find('time')['datetime'],
+        'article_title': article.find('a').text,  # Corrected line
+        'article': paragraph,
+        'source_name': 'Yahoo Finance',
+        'source_link': link
+    }
 
-        allNews.append(news)
+    allNews.append(news)
     return 
 
 def turnToCSV():
@@ -101,7 +101,7 @@ def turnToCSV():
 
     df.to_csv("News.csv", index=False)
 
-
+driver=openWebPage(url)
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    executor.map(fetchNewsInfo,extractNews(openWebPage("https://finance.yahoo.com/quote/AAPL/news")))
+    executor.map(fetchNewsInfo,extractNews(driver))
 turnToCSV()
