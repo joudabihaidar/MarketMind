@@ -102,8 +102,7 @@ def turnToCSV():
     df.to_csv("News.csv", index=False)
 
 def main():
-    driver=openWebPage(url)
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(fetchNewsInfo,extractNews(driver))
+        executor.map(fetchNewsInfo,extractNews(openWebPage(url)))
     turnToCSV()
 main()
