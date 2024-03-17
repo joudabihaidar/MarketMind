@@ -35,7 +35,7 @@ def openWebPage(url):
     """
     driver=webdriver.Chrome()
     driver.get(url)
-    time.sleep(3)
+    driver.implicitly_wait(3)
     return driver
 
 def extractNews(driver):
@@ -59,7 +59,7 @@ def extractNews(driver):
         # The list of article elements:
         articlesList=soup.find('ul',{'class':'My(0) P(0) Wow(bw) Ov(h)'}).find_all('h3',{'class':'Mb(5px)'})
         print(len(articlesList))
-        time.sleep(3)
+        driver.implicitly_wait(3)
     driver.quit()
     return articlesList
 
