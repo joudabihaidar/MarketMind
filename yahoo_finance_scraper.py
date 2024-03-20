@@ -113,12 +113,14 @@ def preProcess(df):
     # Sorting DataFrame based on the 'Date' column in reverse order
     df= df.sort_values(by='Date', ascending=False)
 
-    # Deleting ads:
     # Converting the 'Date' column to datetime format because errors='coerce' will turn invalid parsing to NaT
     df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
-    # Filter out rows with valid dates (non-NaT)
+
+    # Filtering out rows with valid dates (non-NaT)
     df= df.dropna(subset=['Date'])
+    
     return df
+
 def turnToCSV():
     """
     Converting the collected news data into a dataframe and then into a csv file,
