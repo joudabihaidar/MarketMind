@@ -7,9 +7,6 @@ from selenium.webdriver.common.keys import Keys
 # Importing the By class for locating elements on web pages.
 from selenium.webdriver.common.by import By
 
-# Importing the time module for adding time delays.
-import time
-
 # Importing the requests module for sending HTTP requests.
 import requests
 
@@ -109,6 +106,19 @@ def fetchNewsInfo(article):
     allNews.append(news)
     return 
 
+def preProcess(df):
+    # Removing duplicates based on article title
+    df.drop_duplicates(subset='article_title', keep='first', inplace=True)
+
+    # Sorting DataFrame based on the 'Date' column in reverse order
+    df= df.sort_values(by='Date', ascending=False)
+
+    # Deleting ads:
+    # Converting the 'Date' column to datetime format because errors='coerce' will turn invalid parsing to NaT
+    df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+    # Filter out rows with valid dates (non-NaT)
+    df= df.dropna(subset=['Date'])
+    return df
 def turnToCSV():
     """
     Converting the collected news data into a dataframe and then into a csv file,
@@ -122,8 +132,8 @@ def turnToCSV():
     # Appending new data to existing DataFrame
     df = pd.concat([existing_data, pd.DataFrame(allNews)])
 
-    # Removing duplicates based on article title
-    df.drop_duplicates(subset='article_title', keep='first', inplace=True)
+    # handling duplicates and cleaning the data:
+    df=preProcess(df)
 
     df.to_csv("News.csv", index=False)
 
