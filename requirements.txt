@@ -52,5 +52,5 @@ urllib3==1.26.7
 vaderSentiment==3.3.2
 wcwidth==0.2.13
 wsproto==1.2.0
-yfinance==0.1.87
+yfinance==0.1.62
 zipp==3.15.0
