@@ -19,8 +19,7 @@ import pandas as pd
 # Concurrent task execution in python.
 import concurrent.futures
 
-# For sentiment analysis:
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
 
 url="https://finance.yahoo.com/quote/AAPL/news"
 
@@ -110,43 +109,6 @@ def fetchNewsInfo(article):
     allNews.append(news)
     return 
 
-# def sentimentsScores(df):
-#     # SentimentIntensityAnalyzer object:
-#     sentiments = SentimentIntensityAnalyzer()
-
-#     # Empty lists to store sentiment scores:
-#     positive_scores = []
-#     negative_scores = []
-#     neutral_scores = []
-#     compound_scores = []
-
-#     # Calculating the sentiment scores for each article in the df
-#     for article in df["article"]:
-#         scores = sentiments.polarity_scores(article)
-#         positive_scores.append(scores["pos"])
-#         negative_scores.append(scores["neg"])
-#         neutral_scores.append(scores["neu"])
-#         compound_scores.append(scores["compound"])
-
-#     # Assigning the lists to the df columns:
-#     df["Positive"] = positive_scores
-#     df["Negative"] = negative_scores
-#     df["Neutral"] = neutral_scores
-#     df["Compound"] = compound_scores
-
-#     # Labeling the sentiment (positive, neutral or negative) based on the compound score:
-#     score = df["Compound"].values
-#     sentiment = []
-#     for i in score:
-#         if i >= 0.05 :
-#             sentiment.append('Positive')
-#         elif i <= -0.05 :
-#             sentiment.append('Negative')
-#         else:
-#             sentiment.append('Neutral')
-#     df["Sentiment"] = sentiment
-#     return df
-
 
 def preProcess(df):
     # Removing duplicates based on article title
@@ -172,9 +134,6 @@ def turnToCSV():
         existing_data = pd.read_csv(r"C:\Users\Legion\Desktop\FinalYearProject\data\News.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
-
-    # Getting the sentiments score of the new extracted data
-    # new_data=sentimentsScores(pd.DataFrame(allNews))
 
     new_data=pd.DataFrame(allNews)
 
