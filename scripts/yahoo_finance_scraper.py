@@ -46,7 +46,7 @@ def openWebPage(url):
     driver.implicitly_wait(3)
     return driver
 
-def extractNews(driver):
+def extractNews(driver,n):
     """
     Scraping n number of news from the web page using the WebDriver instance.
 
@@ -56,7 +56,7 @@ def extractNews(driver):
     # Finding the <body> element to enable scrolling:
     element=driver.find_element(By.TAG_NAME,'body')
 
-    while len(articlesList)<100:
+    while len(articlesList)<n:
         # Scrolling down the web page by sending PAGE_DOWN key.
         element.send_keys(Keys.PAGE_DOWN)
 
@@ -152,6 +152,6 @@ def main():
     to make the code fetch information from multiple news articles in parallel.
     """
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(fetchNewsInfo,extractNews(openWebPage(url)))
+        executor.map(fetchNewsInfo,extractNews(openWebPage(url),100git))
     turnToCSV()
 main()
