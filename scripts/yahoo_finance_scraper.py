@@ -152,6 +152,6 @@ def main():
     to make the code fetch information from multiple news articles in parallel.
     """
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(fetchNewsInfo,extractNews(openWebPage(url),100git))
+        executor.map(fetchNewsInfo,extractNews(openWebPage(url),100))
     turnToCSV()
 main()
