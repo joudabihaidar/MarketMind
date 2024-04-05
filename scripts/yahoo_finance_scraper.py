@@ -151,6 +151,11 @@ def main():
     Making the program run x100 faster by using concurrent execution,
     to make the code fetch information from multiple news articles in parallel.
     """
+    tickers=['AAPL']
+    #for ticker_symbol in tickers:
+
+    #url=f"https://finance.yahoo.com/quote/{ticker_symbol}/news"
+
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(fetchNewsInfo,extractNews(openWebPage(url),100))
     turnToCSV()
