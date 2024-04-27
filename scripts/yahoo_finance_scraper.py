@@ -19,7 +19,7 @@ import pandas as pd
 # Concurrent task execution in python.
 import concurrent.futures
 
-
+import re
 
 url="https://finance.yahoo.com/quote/AAPL/news"
 
@@ -56,6 +56,9 @@ def extractNews(driver,n):
     # Finding the <body> element to enable scrolling:
     element=driver.find_element(By.TAG_NAME,'body')
 
+    prev_articles_count = 0
+    consecutive_no_new_articles = 0
+
     while len(articlesList)<n:
         # Scrolling down the web page by sending PAGE_DOWN key.
         element.send_keys(Keys.PAGE_DOWN)
@@ -65,7 +68,22 @@ def extractNews(driver,n):
         soup = BeautifulSoup(page_source, 'lxml')
 
         # The list of article elements:
-        articlesList=soup.find('ul',class_='stream-items x-large layoutCol1 svelte-1siuiba').find_all('li')
+        new_articles_list =soup.find('ul',class_='stream-items x-large layoutCol1 svelte-1siuiba').find_all('li')
+
+        # Checking if new articles are loaded
+        # if not we will wait, but if the page tried to load new content
+        # for more than a 100 times and no new data appeared, we stop the loop
+        if len(new_articles_list) == prev_articles_count:
+            consecutive_no_new_articles += 1
+        else:
+            consecutive_no_new_articles = 0
+
+        # If no new articles are loaded for several consecutive times, break the loop
+        if consecutive_no_new_articles >= 100:
+            break
+
+        articlesList = new_articles_list
+        prev_articles_count = len(articlesList)
 
         # for debugging:
         print(len(articlesList))
@@ -74,14 +92,14 @@ def extractNews(driver,n):
     driver.quit()
     return articlesList
 
-def fetchNewsInfo(article):
+def fetchNewsInfo(article,ticker_symbol):
     """
     Fetching the data of each article that we get from 'extractNews' function.
     Getting the date, title, context, source_namme and link of each article.
     """
 
     anchor=article.find('a',href=True)
-
+    # Making sure that we're not scraping the ads
     if anchor and 'finance.yahoo.com/news' in anchor['href']:
         title=article.h3.text
         # Printing the article's title for debugging
@@ -107,7 +125,8 @@ def fetchNewsInfo(article):
             'article_title': title, 
             'article': paragraph,
             'source_name': 'Yahoo Finance',
-            'source_link': link
+            'source_link': link,
+            'ticker_symbol':ticker_symbol
         }
 
     # Global list allNews containing all the data about each article:
@@ -150,17 +169,20 @@ def turnToCSV():
     # Turning the df into a csv file:
     df.to_csv(r"data\News.csv", index=False)
 
+def scrape(ticker_url):
+    ticker_symbol, url=ticker_url
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),300))
+
+
 def main():
     """
     Making the program run x100 faster by using concurrent execution,
     to make the code fetch information from multiple news articles in parallel.
     """
-    tickers=['AAPL']
-    #for ticker_symbol in tickers:
-
-    #url=f"https://finance.yahoo.com/quote/{ticker_symbol}/news"
+    tickers = [("AAPL", "https://finance.yahoo.com/quote/AAPL/news")]
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(fetchNewsInfo,extractNews(openWebPage(url),50))
+        executor.map(scrape,tickers)
     turnToCSV()
 main()
