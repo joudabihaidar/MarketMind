@@ -62,10 +62,10 @@ def extractNews(driver,n):
 
         # Extracting the page source and parsing it with BeautifulSoup:
         page_source = driver.page_source
-        soup = BeautifulSoup(page_source, 'html.parser')
+        soup = BeautifulSoup(page_source, 'lxml')
 
         # The list of article elements:
-        articlesList=soup.find('ul',{'class':'My(0) P(0) Wow(bw) Ov(h)'}).find_all('h3',{'class':'Mb(5px)'})
+        articlesList=soup.find('ul',class_='stream-items x-large layoutCol1 svelte-1siuiba').find_all('li')
 
         # for debugging:
         print(len(articlesList))
@@ -79,36 +79,40 @@ def fetchNewsInfo(article):
     Fetching the data of each article that we get from 'extractNews' function.
     Getting the date, title, context, source_namme and link of each article.
     """
-    # Printing the article's title for debugging
-    print(article.find('a').text)
 
-    # Full URL of the articles:
-    link = 'https://finance.yahoo.com/quote/AAPL' + article.find('a')['href']
-    
-    r = requests.get(link, headers=headers)
+    anchor=article.find('a',href=True)
 
-    # Parsing the HTML content of the article page:
-    soup = BeautifulSoup(r.text, 'html.parser')
+    if anchor and 'finance.yahoo.com/news' in anchor['href']:
+        title=article.h3.text
+        # Printing the article's title for debugging
+        print(title)
 
-    # Finding all the paragraphs of the article and concatenating them:
-    articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
-    paragraph = ''
-    for p in articles:
-        paragraph += p.text
+        # Full URL of the articles:
+        link=anchor['href']
 
-    # Dictionary containing all the data we want:
-    news = {
-        'Date': soup.find('time')['datetime'],
-        'article_title': article.find('a').text,  
-        'article': paragraph,
-        'source_name': 'Yahoo Finance',
-        'source_link': link
-    }
+        r = requests.get(link, headers=headers)
+
+        # Parsing the HTML content of the article page:
+        soup = BeautifulSoup(r.text, 'lxml')
+
+        # Finding all the paragraphs of the article and concatenating them:
+        articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
+        paragraph = ''
+        for p in articles:
+            paragraph += p.text
+
+        # Dictionary containing all the data we want:
+        news = {
+            'Date': soup.find('time')['datetime'],
+            'article_title': title, 
+            'article': paragraph,
+            'source_name': 'Yahoo Finance',
+            'source_link': link
+        }
 
     # Global list allNews containing all the data about each article:
     allNews.append(news)
-    return 
-
+    return
 
 def preProcess(df):
     # Removing duplicates based on article title
@@ -131,7 +135,7 @@ def turnToCSV():
     while handling duplicates and cleaning the data.
     """
     try:
-        existing_data = pd.read_csv(r"C:\Users\Legion\Desktop\FinalYearProject\data\News.csv")
+        existing_data = pd.read_csv(r"data\News.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
 
@@ -144,7 +148,7 @@ def turnToCSV():
     df=preProcess(df)
 
     # Turning the df into a csv file:
-    df.to_csv(r"C:\Users\Legion\Desktop\FinalYearProject\data\News.csv", index=False)
+    df.to_csv(r"data\News.csv", index=False)
 
 def main():
     """
@@ -157,6 +161,6 @@ def main():
     #url=f"https://finance.yahoo.com/quote/{ticker_symbol}/news"
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(fetchNewsInfo,extractNews(openWebPage(url),100))
+        executor.map(fetchNewsInfo,extractNews(openWebPage(url),50))
     turnToCSV()
 main()
