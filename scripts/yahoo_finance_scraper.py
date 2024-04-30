@@ -72,14 +72,14 @@ def extractNews(driver,n):
 
         # Checking if new articles are loaded
         # if not we will wait, but if the page tried to load new content
-        # for more than a 100 times and no new data appeared, we stop the loop
+        # for more than a 50 times and no new data appeared, we stop the loop
         if len(new_articles_list) == prev_articles_count:
             consecutive_no_new_articles += 1
         else:
             consecutive_no_new_articles = 0
 
         # If no new articles are loaded for several consecutive times, break the loop
-        if consecutive_no_new_articles >= 100:
+        if consecutive_no_new_articles >= 50:
             break
 
         articlesList = new_articles_list
@@ -173,7 +173,7 @@ def scrape(ticker_url):
     ticker_symbol, url=ticker_url
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),300))
-
+    turnToCSV()
 
 def main():
     """
@@ -184,5 +184,5 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
-    turnToCSV()
+    # turnToCSV()
 main()
