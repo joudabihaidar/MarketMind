@@ -184,5 +184,5 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
-    # turnToCSV()
+
 main()
