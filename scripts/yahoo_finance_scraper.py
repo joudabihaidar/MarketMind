@@ -71,15 +71,14 @@ def extractNews(driver,n):
         new_articles_list =soup.find('ul',class_='stream-items x-large layoutCol1 svelte-1siuiba').find_all('li')
 
         # Checking if new articles are loaded
-        # if not we will wait, but if the page tried to load new content
-        # for more than a 50 times and no new data appeared, we stop the loop
+        # if not we will wait, but if the page tried to load new content for more than a certain amount of time and no new data appeared, we stop the loop
         if len(new_articles_list) == prev_articles_count:
             consecutive_no_new_articles += 1
         else:
             consecutive_no_new_articles = 0
 
         # If no new articles are loaded for several consecutive times, break the loop
-        if consecutive_no_new_articles >= 50:
+        if consecutive_no_new_articles >= 40:
             break
 
         articlesList = new_articles_list
