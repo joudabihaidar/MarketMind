@@ -171,7 +171,7 @@ def turnToCSV():
 def scrape(ticker_url):
     ticker_symbol, url=ticker_url
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),300))
+        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),100))
     turnToCSV()
 
 def main():
