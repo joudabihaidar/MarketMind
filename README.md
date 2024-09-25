@@ -5,7 +5,7 @@
 <!-- project philosophy -->
 <img src="./readme/title2.svg"/>
 
-> TerrAlert is a system designed to monitor and analyze natural disasters using both historical and real-time data. It processes past disaster records and combines them with live earthquake data, helping to quickly identify the most vulnerable areas in need of resources during crises.
+<!-- > TerrAlert is a system designed to monitor and analyze natural disasters using both historical and real-time data. It processes past disaster records and combines them with live earthquake data, helping to quickly identify the most vulnerable areas in need of resources during crises.
 
 > Big Picture: The main goal of TerrAlert is to help disaster relief organizations quickly spot ongoing or potential disasters in key areas, making it easier to allocate resources. By integrating real-time data with historical information, the system aims to give decision-makers a clear picture of disaster situations, helping them respond faster and manage aid better.
 
@@ -14,18 +14,18 @@
 ### User Stories
 - As a disaster relief coordinator, I want to monitor real-time data to quickly identify affected regions in need of aid.
 - As an analyst, I want to explore historical records of natural disasters to understand trends, impacts, and the responses taken.
-- As a data engineer, I want to build a scalable ETL pipeline to continuously update and manage disaster-related data for analysis.
+- As a data engineer, I want to build a scalable ETL pipeline to continuously update and manage disaster-related data for analysis. -->
 
 <br><br>
 <!-- Tech stack -->
 <img src="./readme/title3.svg"/>
 
-###  TerrAlert is built using the following technologies:
+###  MarketMind is built using the following technologies:
 
-- Python for developing the ETL pipeline and integrating real-time data using the USGS API for earthquake data.
+<!-- - Python for developing the ETL pipeline and integrating real-time data using the USGS API for earthquake data.
 - PostgreSQL as a data warehouse for efficient storage of both real-time and historical disaster data, enabling complex queries and analysis.
 - Power BI for creating interactive dashboards to analyze the human and economic impacts of disasters.
-- Plotly for real-time visualization of earthquake data, providing a dynamic map of earthquake locations and their magnitudes.
+- Plotly for real-time visualization of earthquake data, providing a dynamic map of earthquake locations and their magnitudes. -->
 
 <br><br>
 
@@ -46,7 +46,7 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 <img src="./readme/title6.svg"/>
 
 
-### User Screens (Power BI report)
+<!-- ### User Screens (Power BI report)
 
 | Landing Page                          | Overview                                |
 | ----------------------------------------- | ----------------------------------------- |
@@ -64,7 +64,7 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 <!-- | ![Demo](./readme/earthquake.gif) | -->
 
 
-<br><br>
+<br><br> -->
 
 
 <!-- Unit Testing -->
@@ -86,9 +86,9 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 <!-- How to run -->
 <img src="./readme/title10.svg"/>
 
-> To set up the TerrAlert locally, follow these steps:
+> To set up the MarketMind locally, follow these steps:
 
-### Prerequisites
+<!-- ### Prerequisites
 
 Make sure to have the following dependencies installed:
 
@@ -104,4 +104,4 @@ Make sure to have the following dependencies installed:
    ```
       pip install -r requirements.txt
    ```
-Now, you should be able to run the project locally and explore its features.
+Now, you should be able to run the project locally and explore its features. -->
