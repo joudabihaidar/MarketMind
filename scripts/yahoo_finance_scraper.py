@@ -68,7 +68,7 @@ def extractNews(driver,n):
         soup = BeautifulSoup(page_source, 'lxml')
 
         # The list of article elements:
-        new_articles_list =soup.find('ul',class_='stream-items x-large layoutCol1 svelte-1siuiba').find_all('li')
+        new_articles_list =soup.find('ul',class_='stream-items x-large layoutCol1 yf-1x0cgbi').find_all('li')
 
         # Checking if new articles are loaded
         # if not we will wait, but if the page tried to load new content for more than a certain amount of time and no new data appeared, we stop the loop
@@ -113,7 +113,7 @@ def fetchNewsInfo(article,ticker_symbol):
         soup = BeautifulSoup(r.text, 'lxml')
 
         # Finding all the paragraphs of the article and concatenating them:
-        articles = soup.find('div', {'class': 'caas-body'}).find_all('p')
+        articles = soup.find('div', {'class': 'body yf-5ef8bf'}).find_all('p')
         paragraph = ''
         for p in articles:
             paragraph += p.text
@@ -171,7 +171,7 @@ def turnToCSV():
 def scrape(ticker_url):
     ticker_symbol, url=ticker_url
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),100))
+        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),150))
     turnToCSV()
 
 def main():
@@ -179,7 +179,7 @@ def main():
     Making the program run x100 faster by using concurrent execution,
     to make the code fetch information from multiple news articles in parallel.
     """
-    tickers = [("AAPL", "https://finance.yahoo.com/quote/AAPL/news")]
+    tickers = [("AAPL", "https://finance.yahoo.com/quote/AAPL/latest-news")]
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
