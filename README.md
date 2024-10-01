@@ -64,7 +64,7 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 <!-- | ![Demo](./readme/earthquake.gif) | -->
 
 
-<br><br> -->
+<br><br> 
 
 
 <!-- Unit Testing -->
