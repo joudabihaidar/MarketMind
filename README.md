@@ -5,16 +5,14 @@
 <!-- project philosophy -->
 <img src="./readme/title2.svg"/>
 
-<!-- > TerrAlert is a system designed to monitor and analyze natural disasters using both historical and real-time data. It processes past disaster records and combines them with live earthquake data, helping to quickly identify the most vulnerable areas in need of resources during crises.
+> MarketMind is a system that enhances financial analysis by integrating sentiment data from news articles into traditional market metrics. By analyzing sentiment, it provides investors with valuable insights into the emotional factors influencing market movements, which are often missed by conventional methods.
 
-> Big Picture: The main goal of TerrAlert is to help disaster relief organizations quickly spot ongoing or potential disasters in key areas, making it easier to allocate resources. By integrating real-time data with historical information, the system aims to give decision-makers a clear picture of disaster situations, helping them respond faster and manage aid better.
-
-> While the current version focuses on data processing and visualization, future updates will enhance TerrAlert’s ability to automatically detect high-risk areas and predict zones prone to disasters, getting closer to achieving the full vision of the system.
+> The strength of MarketMind lies in its ability to connect financial data with market sentiment. By correlating sentiment with stock price shifts, it helps investors and analysts anticipate market trends and make more informed decisions. As real-time sentiment data becomes increasingly important, MarketMind offers a reliable tool for evaluating market sentiment, supporting better decision-making and improved risk management strategies.
 
 ### User Stories
-- As a disaster relief coordinator, I want to monitor real-time data to quickly identify affected regions in need of aid.
-- As an analyst, I want to explore historical records of natural disasters to understand trends, impacts, and the responses taken.
-- As a data engineer, I want to build a scalable ETL pipeline to continuously update and manage disaster-related data for analysis. -->
+- As an investor, I want to assess market sentiment to make informed investment decisions based on news and trends.
+- As a financial analyst, I want to correlate sentiment analysis with stock price shifts to explore emotional factors driving market dynamics.
+- As a data scientist, I want to implement advanced web scraping and sentiment analysis tools to provide accurate and timely insights into market sentiment.
 
 <br><br>
 <!-- Tech stack -->
