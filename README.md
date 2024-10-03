@@ -69,12 +69,12 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 | --------------------------------- | -------------------------------------- |
 | ![Demo](./readme/country_drill_through.png) | ![Demo](./readme/sneak_peek1.gif) | -->
 
-<!-- ### User Screens (Python) -->
+### News Extraction
 
 | Running the Scraper                         | 
 | ----------------------------------------- | 
 | <img src="./readme/scraper.gif" width="800" height="auto" /> |
-<!-- | ![Demo](./readme/earthquake.gif) |-->
+
 
 
 <br><br> 
