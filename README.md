@@ -67,14 +67,14 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 
 | Country-Specific Drill-Through          | Sneak Peek                          |
 | --------------------------------- | -------------------------------------- |
-| ![Demo](./readme/country_drill_through.png) | ![Demo](./readme/sneak_peek1.gif) |
+| ![Demo](./readme/country_drill_through.png) | ![Demo](./readme/sneak_peek1.gif) | -->
 
-### User Screens (Python)
+<!-- ### User Screens (Python) -->
 
-| Real Time Earthquake Monitoring                          | 
+| Running the Scraper                         | 
 | ----------------------------------------- | 
 | <img src="./readme/earthquakes.gif" width="800" height="auto" /> |
-<!-- | ![Demo](./readme/earthquake.gif) | -->
+<!-- | ![Demo](./readme/earthquake.gif) |-->
 
 
 <br><br> 
