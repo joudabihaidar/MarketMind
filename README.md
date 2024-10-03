@@ -73,7 +73,7 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 
 | Running the Scraper                         | 
 | ----------------------------------------- | 
-| <img src="./readme/earthquakes.gif" width="800" height="auto" /> |
+| <img src="./readme/scraper.gif" width="800" height="auto" /> |
 <!-- | ![Demo](./readme/earthquake.gif) |-->
 
 
