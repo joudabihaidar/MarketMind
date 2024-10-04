@@ -73,15 +73,7 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 
 | Running the Scraper                         | 
 | ----------------------------------------- | 
-| <video width="800" height="auto" controls>
-      <source src="./readme/scraper.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video> |
-
-
-<!-- | Running the Scraper                         | 
-| ----------------------------------------- | 
-| <img src="./readme/scraper.mp4" width="800" height="auto" /> | -->
+| <img src="./readme/scraper.gif" width="800" height="auto" /> |
 
 
 
