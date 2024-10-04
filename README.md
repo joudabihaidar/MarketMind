@@ -43,18 +43,6 @@ The stock price dataset was processed to align with the articles' timestamps by 
 <br><br>
 
 
-<!-- Database Design -->
-<!-- <img src="./readme/title5.svg"/>
-
-###  Star Schema:
-The star schema for TerrAlert offers several advantages, including simplicity, as its clear structure with a central fact table and surrounding dimension tables makes data access intuitive and easy to navigate. It provides improved performance for queries on large datasets, crucial for analyzing both historical records and real-time data.
-
-<img src="./readme/ER_Diagram.png"/>
-
-
-<br><br> -->
-
-
 <!-- Implementation -->
 <img src="./readme/title6.svg"/>
 
@@ -80,41 +68,24 @@ The star schema for TerrAlert offers several advantages, including simplicity, a
 <br><br> 
 
 
-<!-- Unit Testing -->
-<!-- <img src="./readme/title9.svg"/>
-
-###  Ensuring Quality: The Importance of Data Validation:
-
-- Data validation ensures the accuracy of the ETL process through detailed logging. During extraction, logs track data sources and any access issues. In transformation, they document processing steps and validation checks. The loading phase logs capture the success of data uploads and any conflicts. These logs are essential for monitoring data flow and maintaining data quality, ensuring the final dataset is reliable for analysis.
-<br><br>
-
-| Logs                        | 
-| ----------------------------------------- | 
-| ![Demo](./readme/logs.png) |
-
-
-<br><br> -->
-
-
 <!-- How to run -->
 <img src="./readme/title10.svg"/>
 
-> To set up the MarketMind locally, follow these steps:
+> To set up MarketMind locally, follow these steps:
 
-<!-- ### Prerequisites
+### Prerequisites
 
 Make sure to have the following dependencies installed:
 
-- PostgreSQL
 - Required Python libraries (listed in requirements.txt)
 
 ### Installation
 1. Clone the repository:
    ```
-      git clone https://github.com/joudabihaidar/TerrAlert.git
+      git clone https://github.com/joudabihaidar/MarketMind.git
    ```
 2. Install the necessary Python libraries:
    ```
       pip install -r requirements.txt
    ```
-Now, you should be able to run the project locally and explore its features. -->
+Now, you should be able to run the project locally and explore its features.
