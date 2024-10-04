@@ -58,10 +58,18 @@ The stock price dataset was processed to align with the articles' timestamps by 
 | ![Demo](./readme/country_drill_through.png) | ![Demo](./readme/sneak_peek1.gif) | -->
 
 ### News Extraction
-
+1. The scraper takes a stock ticker symbol as input to retrieve related news articles from Yahoo Finance.
+2. It navigates to the Yahoo Finance webpage corresponding to the given ticker symbol.
+3. The scraper scrolls down the page to dynamically load additional articles.
+4. It parses the webpage content, extracting the article title, body, and publication date.
+5. Finally, the extracted data is saved in a CSV file for future analysis or use.
+<!-- | Running the Scraper                         | 
+| ----------------------------------------- | 
+| <img src="./readme/scraper.gif" width="800" height="auto" /> | -->
 | Running the Scraper                         | 
 | ----------------------------------------- | 
-| <img src="./readme/scraper.gif" width="800" height="auto" /> |
+| [Watch the video](https://example.com/scraper.mp4) |
+
 
 
 
