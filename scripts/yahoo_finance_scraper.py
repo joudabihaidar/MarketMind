@@ -68,7 +68,7 @@ def extractNews(driver,n):
         soup = BeautifulSoup(page_source, 'lxml')
 
         # The list of article elements:
-        new_articles_list =soup.find('ul',class_='stream-items x-large layoutCol1 yf-1x0cgbi').find_all('li')
+        new_articles_list =soup.find('ul',class_='stream-items yf-1usaaz9').find_all('li')
 
         # Checking if new articles are loaded
         # if not we will wait, but if the page tried to load new content for more than a certain amount of time and no new data appeared, we stop the loop
@@ -172,7 +172,7 @@ def scrape(ticker_url):
     ticker_symbol, url=ticker_url
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),150))
-    turnToCSV()
+    # turnToCSV()
 
 def main():
     """
@@ -183,5 +183,6 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
+    turnToCSV()
 
 main()
