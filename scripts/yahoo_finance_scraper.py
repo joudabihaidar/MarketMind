@@ -85,7 +85,7 @@ def extractNews(driver,n):
         prev_articles_count = len(articlesList)
 
         # for debugging:
-        print(len(articlesList))
+        print(f"{len(articlesList)} articles extracted.")
 
         driver.implicitly_wait(3)
     driver.quit()
@@ -102,7 +102,7 @@ def fetchNewsInfo(article,ticker_symbol):
     if anchor and 'finance.yahoo.com/news' in anchor['href']:
         title=article.h3.text
         # Printing the article's title for debugging
-        print(title)
+        print(f"Parsing: {title} \n")
 
         # Full URL of the articles:
         link=anchor['href']
@@ -153,7 +153,7 @@ def turnToCSV():
     while handling duplicates and cleaning the data.
     """
     try:
-        existing_data = pd.read_csv(r"data\News.csv")
+        existing_data = pd.read_csv(r"data/News.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
 
@@ -166,13 +166,13 @@ def turnToCSV():
     df=preProcess(df)
 
     # Turning the df into a csv file:
-    df.to_csv(r"data\News.csv", index=False)
+    df.to_csv(r"data/News.csv", index=False)
 
 def scrape(ticker_url):
     ticker_symbol, url=ticker_url
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),150))
-    # turnToCSV()
+    turnToCSV()
 
 def main():
     """
@@ -183,6 +183,6 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
-    turnToCSV()
+    # turnToCSV()
 
 main()

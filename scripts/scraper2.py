@@ -130,7 +130,7 @@ def turnToCSV():
     Convert the collected news data into a DataFrame and then into a CSV file.
     """
     try:
-        existing_data = pd.read_csv(r"data\News2.csv")
+        existing_data = pd.read_csv(r"../data/News2.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
 
@@ -143,7 +143,7 @@ def turnToCSV():
     df = preProcess(df)
 
     # Save the DataFrame to CSV
-    df.to_csv(r"data\News2.csv", index=False)
+    df.to_csv(r"../data/News2.csv", index=False)
 
 def scrape(ticker_url):
     """
