@@ -63,6 +63,7 @@ The stock price dataset was processed to align with the articles' timestamps by 
 3. The scraper scrolls down the page to dynamically load additional articles.
 4. It parses the webpage content, extracting the article title, body, and publication date.
 5. Finally, the extracted data is saved in a CSV file for future analysis or use.
+
 | Running the Scraper                         | 
 | ----------------------------------------- | 
 | <img src="./readme/scraper.gif" width="800" height="auto" /> |
