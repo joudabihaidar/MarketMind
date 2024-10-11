@@ -153,7 +153,7 @@ def turnToCSV():
     while handling duplicates and cleaning the data.
     """
     try:
-        existing_data = pd.read_csv(r"data/News.csv")
+        existing_data = pd.read_csv(r"../data/News.csv")
     except FileNotFoundError:
         existing_data = pd.DataFrame()
 
@@ -166,7 +166,7 @@ def turnToCSV():
     df=preProcess(df)
 
     # Turning the df into a csv file:
-    df.to_csv(r"data/News.csv", index=False)
+    df.to_csv(r"../data/News.csv", index=False)
 
 def scrape(ticker_url):
     ticker_symbol, url=ticker_url
