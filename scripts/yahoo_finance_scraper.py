@@ -21,7 +21,18 @@ import concurrent.futures
 
 import re
 
-url="https://finance.yahoo.com/quote/AAPL/news"
+# Logging for debugging purposes
+import logging 
+
+# Setting up logging configuration
+logging.basicConfig(
+    filename='scraper.log',
+    filemode='w',
+    format='%(asctime)s - %(levelname)s - %(message)s', 
+    level=logging.INFO
+)
+
+logging.info("Scraper started.")
 
 """
 Setting up a user-agent header to mimic a request coming from a specific web browser.
@@ -41,6 +52,7 @@ def openWebPage(url):
 
     The WebDriver instance returned, allows you to automate interactions with the web page.
     """
+    logging.info(f"Opening webpage: {url}")
     driver=webdriver.Chrome()
     driver.get(url)
     driver.implicitly_wait(3)
@@ -52,6 +64,7 @@ def extractNews(driver,n):
 
     It returns a list of article elements found while scrolling through the page.
     """
+    logging.info(f"Starting news extraction for {n} articles")
     articlesList=[]
     # Finding the <body> element to enable scrolling:
     element=driver.find_element(By.TAG_NAME,'body')
@@ -79,19 +92,18 @@ def extractNews(driver,n):
 
         # If no new articles are loaded for several consecutive times, break the loop
         if consecutive_no_new_articles >= 40:
+            logging.warning("No new articles loaded after several attempts. Stopping extraction.")
             break
 
         articlesList = new_articles_list
         prev_articles_count = len(articlesList)
-
-        # for debugging:
-        print(f"{len(articlesList)} articles extracted.")
-
+        logging.info(f"{len(articlesList)} articles extracted so far.")
         driver.implicitly_wait(3)
     driver.quit()
+    logging.info(f"Finished extracting {len(articlesList)} articles.")
     return articlesList
 
-def fetchNewsInfo(article,ticker_symbol):
+def fetchNewsInfo(article,ticker_symbol,article_number):
     """
     Fetching the data of each article that we get from 'extractNews' function.
     Getting the date, title, context, source_namme and link of each article.
@@ -102,7 +114,7 @@ def fetchNewsInfo(article,ticker_symbol):
     if anchor and 'finance.yahoo.com/news' in anchor['href']:
         title=article.h3.text
         # Printing the article's title for debugging
-        print(f"Parsing: {title} \n")
+        logging.info(f"Parsing article #{article_number}: '{title}' \n")
 
         # Full URL of the articles:
         link=anchor['href']
@@ -111,32 +123,37 @@ def fetchNewsInfo(article,ticker_symbol):
 
         # Parsing the HTML content of the article page:
         soup = BeautifulSoup(r.text, 'lxml')
+        try:
+            # Finding all the paragraphs of the article and concatenating them:
+            articles = soup.find('div', {'class': 'article-wrap no-bb'}).find_all('p')
+            paragraph = ''
+            for p in articles:
+                paragraph += p.text
 
-        # Finding all the paragraphs of the article and concatenating them:
-        articles = soup.find('div', {'class': 'body yf-5ef8bf'}).find_all('p')
-        paragraph = ''
-        for p in articles:
-            paragraph += p.text
-
-        # Dictionary containing all the data we want:
-        news = {
-            'Date': soup.find('time')['datetime'],
-            'article_title': title, 
-            'article': paragraph,
-            'source_name': 'Yahoo Finance',
-            'source_link': link,
-            'ticker_symbol':ticker_symbol
-        }
-
-    # Global list allNews containing all the data about each article:
-    allNews.append(news)
-    return
+            # Dictionary containing all the data we want:
+            news = {
+                'Date': soup.find('time')['datetime'],
+                'article_title': title, 
+                'article': paragraph,
+                'source_name': 'Yahoo Finance',
+                'source_link': link,
+                'ticker_symbol':ticker_symbol
+            }
+            # Global list allNews containing all the data about each article:
+            allNews.append(news)
+            logging.info(f"Article #{article_number} processed successfully.\n")
+        except Exception as e:
+            logging.error(f"Error processing article #{article_number}: '{title}' {e}")
+    return allNews
 
 def preProcess(df):
+    logging.info("Starting data preprocessing.")
     # Removing duplicates based on article title
+    logging.info("Removing duplicates")
     df.drop_duplicates(subset='article_title', keep='first', inplace=True)
 
     # Sorting DataFrame based on the 'Date' column in reverse order
+    logging.info("Sorting the the data based on the data of publication.")
     df= df.sort_values(by='Date', ascending=False)
 
     # Converting the 'Date' column to datetime format because errors='coerce' will turn invalid parsing to NaT
@@ -145,6 +162,7 @@ def preProcess(df):
     # Filtering out rows with valid dates (non-NaT)
     df= df.dropna(subset=['Date'])
     
+    logging.info("Data preprocessing completed.")
     return df
 
 def turnToCSV():
@@ -152,27 +170,33 @@ def turnToCSV():
     Converting the collected news data into a dataframe and then into a csv file,
     while handling duplicates and cleaning the data.
     """
+    logging.info("Converting data to CSV.")
+    new_data = pd.DataFrame(allNews)
+    print(f"New data: {new_data}")
+
     try:
-        existing_data = pd.read_csv(r"../data/News.csv")
+        # Check if the file exists
+        with open('data/News.csv', 'r') as file:
+            pass
+        # Append data without headers
+        new_data.to_csv('data/News.csv', mode='a', header=False, index=False)
+        logging.info("Appended new data to existing CSV.")
     except FileNotFoundError:
-        existing_data = pd.DataFrame()
+        # File does not exist, create it with headers
+        new_data.to_csv('data/News.csv', mode='w', index=False)
+        logging.info("Created new CSV file and saved data.")
 
-    new_data=pd.DataFrame(allNews)
-
-    # Appending new data to existing DataFrame
-    df = pd.concat([existing_data, new_data])
-
-    # handling duplicates and cleaning the data:
-    df=preProcess(df)
-
-    # Turning the df into a csv file:
-    df.to_csv(r"../data/News.csv", index=False)
 
 def scrape(ticker_url):
-    ticker_symbol, url=ticker_url
+    ticker_symbol, url = ticker_url
+    logging.info(f"Scraping started for {ticker_symbol} at {url}")
+    articles = extractNews(openWebPage(url), 150)
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(lambda article: fetchNewsInfo(article,ticker_symbol),extractNews(openWebPage(url),150))
+        for i, article in enumerate(articles):
+            executor.submit(fetchNewsInfo, article, ticker_symbol, i + 1)  # Pass article number
     turnToCSV()
+    logging.info(f"Scraping completed for {ticker_symbol}.")
+
 
 def main():
     """
@@ -183,6 +207,11 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(scrape,tickers)
-    # turnToCSV()
 
-main()
+
+if __name__ == "__main__":
+    try:
+        main()
+        logging.info("Scraper completed successfully.")
+    except Exception as e:
+        logging.error(f"Scraper encountered an error: {e}")
