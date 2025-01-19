@@ -1,427 +1,670 @@
-2025-01-18 18:30:41,938 - INFO - Scraper started.
-2025-01-18 18:30:41,940 - INFO - Scraping started for AAPL at https://finance.yahoo.com/quote/AAPL/latest-news
-2025-01-18 18:30:41,940 - INFO - Opening webpage: https://finance.yahoo.com/quote/AAPL/latest-news
-2025-01-18 18:31:30,529 - INFO - Starting news extraction for 150 articles
-2025-01-18 18:31:30,700 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:30,931 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,097 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,299 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,457 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,629 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,783 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:31,959 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,115 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,329 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,493 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,659 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,825 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:32,980 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:33,270 - INFO - 26 articles extracted so far.
-2025-01-18 18:31:33,440 - INFO - 51 articles extracted so far.
-2025-01-18 18:31:33,608 - INFO - 51 articles extracted so far.
-2025-01-18 18:31:33,947 - INFO - 76 articles extracted so far.
-2025-01-18 18:31:34,417 - INFO - 76 articles extracted so far.
-2025-01-18 18:31:35,400 - INFO - 101 articles extracted so far.
-2025-01-18 18:31:35,621 - INFO - 126 articles extracted so far.
-2025-01-18 18:31:37,493 - INFO - 176 articles extracted so far.
-2025-01-18 18:31:39,676 - INFO - Finished extracting 176 articles.
-2025-01-18 18:31:43,773 - INFO - Parsing article #1: 'What could happen to your TikTok app on Sunday' 
+2025-01-19 22:24:44,745 - INFO - Scraper started.
+2025-01-19 22:24:44,747 - INFO - Scraping started for AAPL at https://finance.yahoo.com/quote/AAPL/latest-news
+2025-01-19 22:24:44,747 - INFO - Opening webpage: https://finance.yahoo.com/quote/AAPL/latest-news
+2025-01-19 22:24:55,597 - INFO - Starting news extraction for 300 articles
+2025-01-19 22:24:55,819 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:56,237 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:56,406 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:56,617 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:56,789 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:56,946 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:57,117 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:57,286 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:57,494 - INFO - 26 articles extracted so far.
+2025-01-19 22:24:57,886 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:58,070 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:58,307 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:58,520 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:58,960 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:59,164 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:59,382 - INFO - 51 articles extracted so far.
+2025-01-19 22:24:59,609 - INFO - 76 articles extracted so far.
+2025-01-19 22:24:59,846 - INFO - 76 articles extracted so far.
+2025-01-19 22:25:00,150 - INFO - 76 articles extracted so far.
+2025-01-19 22:25:00,363 - INFO - 76 articles extracted so far.
+2025-01-19 22:25:00,598 - INFO - 76 articles extracted so far.
+2025-01-19 22:25:00,995 - INFO - 76 articles extracted so far.
+2025-01-19 22:25:01,347 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:01,618 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:01,856 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:02,425 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:02,650 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:02,877 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:03,091 - INFO - 101 articles extracted so far.
+2025-01-19 22:25:03,481 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:03,687 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:04,103 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:04,384 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:04,629 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:04,862 - INFO - 126 articles extracted so far.
+2025-01-19 22:25:05,222 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:05,466 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:05,700 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:06,233 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:06,528 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:06,772 - INFO - 151 articles extracted so far.
+2025-01-19 22:25:07,193 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:07,931 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:08,266 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:08,543 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:08,837 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:09,090 - INFO - 176 articles extracted so far.
+2025-01-19 22:25:09,428 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:09,726 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:09,973 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:10,602 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:10,938 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:11,255 - INFO - 201 articles extracted so far.
+2025-01-19 22:25:11,530 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:11,824 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:12,567 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:12,889 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:13,180 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:13,486 - INFO - 226 articles extracted so far.
+2025-01-19 22:25:13,908 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:14,163 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:14,520 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:15,142 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:15,429 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:15,778 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:16,051 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:16,403 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:16,716 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:16,970 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:17,295 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:17,621 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:17,968 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:18,266 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:18,551 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:18,937 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:19,256 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:19,606 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:19,910 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:20,173 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:20,626 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:20,925 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:21,248 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:21,551 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:21,842 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:22,210 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:22,523 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:22,796 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:23,150 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:23,499 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:23,817 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:24,102 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:24,376 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:24,749 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:25,019 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:25,353 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:25,612 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:25,910 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:26,253 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:26,528 - INFO - 248 articles extracted so far.
+2025-01-19 22:25:26,862 - WARNING - No new articles loaded after several attempts. Stopping extraction.
+2025-01-19 22:25:29,035 - INFO - Finished extracting 248 articles.
+2025-01-19 22:25:33,132 - INFO - Parsing article #1: 'Stock playbook for Trump's second term: Top sector winners and losers' 
 
-2025-01-18 18:31:43,773 - INFO - Parsing article #2: 'Why Is Cliff Asness Bullish On Apple Inc. (AAPL)?' 
+2025-01-19 22:25:33,132 - INFO - Parsing article #2: 'Mag 7, crypto, AI, Trump, tariffs, Fed, and everything else that will dominate Davos' 
 
-2025-01-18 18:31:43,774 - INFO - Parsing article #4: '2 Warren Buffett Stocks to Hold Forever' 
+2025-01-19 22:25:33,134 - INFO - Parsing article #8: 'Why Is Apple Inc. (AAPL) Among Louis Navellier’s Top Long-term Stock Picks?' 
 
-2025-01-18 18:31:43,775 - INFO - Parsing article #6: 'Where Will Apple Stock Be in 5 Years?' 
+2025-01-19 22:25:33,134 - INFO - Parsing article #9: 'Here's How Much You Could Earn in Dividends From a $350,000 Investment in the "Magnificent Seven" Stocks' 
 
-2025-01-18 18:31:43,777 - INFO - Parsing article #15: 'Why Qorvo Rallied Double Digits Today' 
+2025-01-19 22:25:33,134 - INFO - Parsing article #11: 'With 61% ownership of the shares, Apple Inc. (NASDAQ:AAPL) is heavily dominated by institutional owners' 
 
-2025-01-18 18:31:43,778 - INFO - Parsing article #17: 'SYF Offers Greater Flexibility With Apple Pay's Pay Later Feature' 
+2025-01-19 22:25:33,135 - INFO - Parsing article #12: 'Warren Buffett Owns 6 Dow Jones Stocks. Here's the Best of the Bunch for Income Investors to Buy Right Now.' 
 
-2025-01-18 18:31:43,779 - INFO - Parsing article #19: 'Market Chatter: Apple's Partner Foxconn Faces Challenges in Sending Staff to India, Importing Machinery From China' 
+2025-01-19 22:25:33,137 - INFO - Parsing article #15: 'Apple Inc. (AAPL): A Prime Investment with Strong Financials, AI Integration, and Groundbreaking Innovations in iOS and iPhone' 
 
-2025-01-18 18:31:43,780 - INFO - Parsing article #20: 'If You Invested $10,000 In Apple Stock 10 Years Ago, How Much Would You Have Now?' 
+2025-01-19 22:25:33,137 - INFO - Parsing article #16: 'My 5 Largest Portfolio Holdings Heading Into 2025 -- and the Important Investing Lesson I Learned From Each One' 
 
-2025-01-18 18:31:43,781 - INFO - Parsing article #21: 'Apple's $250 Price Target: The iPhone 17 Bet That Could Send Shares Soaring' 
+2025-01-19 22:25:33,140 - INFO - Parsing article #19: 'Apple Inc. (AAPL): AI Innovations Shaping the Future' 
 
-2025-01-18 18:31:43,783 - INFO - Parsing article #30: 'TikTok loses Supreme Court battle to stop US ban' 
+2025-01-19 22:25:33,140 - INFO - Parsing article #20: 'Why Is Cliff Asness Bullish On Apple Inc. (AAPL)?' 
 
-2025-01-18 18:31:43,783 - INFO - Parsing article #32: 'What's the Better Long-Term Investment: The Nasdaq-100 or the Top S&P 500 Growth Stocks?' 
+2025-01-19 22:25:33,141 - INFO - Parsing article #21: '2 Warren Buffett Stocks to Hold Forever' 
 
-2025-01-18 18:31:43,785 - INFO - Parsing article #34: 'Microsoft’s Stock Revival Hinges on Showing Growth From AI Binge' 
+2025-01-19 22:25:33,141 - INFO - Parsing article #23: 'Mark Zuckerberg says Apple hasn’t innovated since the iPhone. He’s forgetting about this one major thing' 
 
-2025-01-18 18:31:43,785 - INFO - Parsing article #35: 'Watch These Apple Price Levels After Stock Suffers Biggest One-Day Drop Since August' 
+2025-01-19 22:25:33,142 - INFO - Parsing article #24: 'Where Will Apple Stock Be in 5 Years?' 
 
-2025-01-18 18:31:43,786 - INFO - Parsing article #36: 'Apple pauses AI-generated news alerts over inaccuracy issues' 
+2025-01-19 22:25:33,146 - INFO - Parsing article #34: 'Why Qorvo Rallied Double Digits Today' 
 
-2025-01-18 18:31:43,786 - INFO - Parsing article #38: '2 Warren Buffett Stocks to Buy and Hold Through 2025 and Beyond' 
+2025-01-19 22:25:33,146 - INFO - Parsing article #36: 'SYF Offers Greater Flexibility With Apple Pay's Pay Later Feature' 
 
-2025-01-18 18:31:43,786 - INFO - Parsing article #39: 'Apple iPhone sales fell in all four quarters in China, Reuters reports' 
+2025-01-19 22:25:33,146 - INFO - Parsing article #37: 'Market Chatter: Apple's Partner Foxconn Faces Challenges in Sending Staff to India, Importing Machinery From China' 
 
-2025-01-18 18:31:56,993 - INFO - Article #35 processed successfully.
+2025-01-19 22:25:40,044 - INFO - Article #36 processed successfully.
 
-2025-01-18 18:31:56,994 - INFO - Parsing article #41: '5 Things to Know Before the Stock Market Opens' 
+2025-01-19 22:25:40,046 - INFO - Parsing article #38: 'If You Invested $10,000 In Apple Stock 10 Years Ago, How Much Would You Have Now?' 
 
-2025-01-18 18:31:57,925 - INFO - Article #38 processed successfully.
+2025-01-19 22:25:41,116 - INFO - Article #16 processed successfully.
 
-2025-01-18 18:31:57,927 - INFO - Parsing article #42: 'Apple’s Tim Cook took home $74.6 million last year. But he started out in the world of work with a humble $1.10-an-hour job' 
+2025-01-19 22:25:41,118 - INFO - Parsing article #39: 'Apple's $250 Price Target: The iPhone 17 Bet That Could Send Shares Soaring' 
 
-2025-01-18 18:31:58,440 - INFO - Article #39 processed successfully.
+2025-01-19 22:25:41,478 - INFO - Article #15 processed successfully.
 
-2025-01-18 18:31:58,441 - INFO - Parsing article #43: 'Trending tickers: Apple, Rivian, Infosys, Duolingo and Rio Tinto' 
+2025-01-19 22:25:41,479 - INFO - Parsing article #42: 'What could happen to your TikTok app on Sunday' 
 
-2025-01-18 18:31:58,483 - INFO - Article #36 processed successfully.
+2025-01-19 22:25:41,633 - INFO - Article #9 processed successfully.
 
-2025-01-18 18:31:58,485 - INFO - Parsing article #45: 'The tech CEO PDA for Trump is all about defense: Morning Brief' 
+2025-01-19 22:25:41,635 - INFO - Parsing article #50: 'TikTok loses Supreme Court battle to stop US ban' 
 
-2025-01-18 18:31:58,706 - INFO - Article #21 processed successfully.
+2025-01-19 22:25:41,805 - INFO - Article #11 processed successfully.
 
-2025-01-18 18:31:58,708 - INFO - Parsing article #46: 'A Look Back at Consumer Electronics Stocks’ Q3 Earnings: Peloton (NASDAQ:PTON) Vs The Rest Of The Pack' 
+2025-01-19 22:25:41,807 - INFO - Parsing article #52: 'What's the Better Long-Term Investment: The Nasdaq-100 or the Top S&P 500 Growth Stocks?' 
 
-2025-01-18 18:31:59,841 - INFO - Article #2 processed successfully.
+2025-01-19 22:25:42,245 - INFO - Article #1 processed successfully.
 
-2025-01-18 18:31:59,843 - INFO - Parsing article #50: 'These 3 Companies Generate Serious Cash' 
+2025-01-19 22:25:42,247 - INFO - Parsing article #53: 'Microsoft’s Stock Revival Hinges on Showing Growth From AI Binge' 
 
-2025-01-18 18:32:00,159 - INFO - Article #1 processed successfully.
+2025-01-19 22:25:42,257 - INFO - Article #12 processed successfully.
 
-2025-01-18 18:32:00,161 - INFO - Parsing article #51: 'Why Trump saving TikTok isn't so legally simple' 
+2025-01-19 22:25:42,258 - INFO - Parsing article #54: 'Watch These Apple Price Levels After Stock Suffers Biggest One-Day Drop Since August' 
 
-2025-01-18 18:32:00,474 - INFO - Article #6 processed successfully.
+2025-01-19 22:25:42,497 - INFO - Article #37 processed successfully.
 
-2025-01-18 18:32:00,475 - INFO - Parsing article #54: 'Apple Shares Fall 3% After Losing Top Spot in Chinese Market' 
+2025-01-19 22:25:42,498 - INFO - Parsing article #56: 'Apple pauses AI-generated news alerts over inaccuracy issues' 
 
-2025-01-18 18:32:00,612 - INFO - Article #4 processed successfully.
+2025-01-19 22:25:43,134 - INFO - Article #2 processed successfully.
 
-2025-01-18 18:32:00,613 - INFO - Parsing article #56: 'Nvidia CEO Will Miss Trump Inauguration, Unlike Many Tech Peers' 
+2025-01-19 22:25:43,136 - INFO - Parsing article #58: '2 Warren Buffett Stocks to Buy and Hold Through 2025 and Beyond' 
 
-2025-01-18 18:32:00,735 - INFO - Article #15 processed successfully.
+2025-01-19 22:25:43,160 - INFO - Article #24 processed successfully.
 
-2025-01-18 18:32:00,736 - INFO - Parsing article #57: 'Why Apple (AAPL) Shares Are Falling Today' 
+2025-01-19 22:25:43,162 - INFO - Parsing article #60: 'Apple iPhone sales fell in all four quarters in China, Reuters reports' 
 
-2025-01-18 18:32:00,937 - INFO - Article #19 processed successfully.
+2025-01-19 22:25:43,492 - INFO - Article #20 processed successfully.
 
-2025-01-18 18:32:00,939 - INFO - Parsing article #60: 'Is Apple Inc. (AAPL) the Best NASDAQ Dividend Stock to Buy?' 
+2025-01-19 22:25:43,493 - INFO - Parsing article #61: '5 Things to Know Before the Stock Market Opens' 
 
-2025-01-18 18:32:01,081 - INFO - Article #30 processed successfully.
+2025-01-19 22:25:43,835 - INFO - Article #21 processed successfully.
 
-2025-01-18 18:32:01,083 - INFO - Parsing article #62: 'Why the tech industry is cozying up to Trump the second time around' 
+2025-01-19 22:25:43,836 - INFO - Parsing article #62: 'Apple’s Tim Cook took home $74.6 million last year. But he started out in the world of work with a humble $1.10-an-hour job' 
 
-2025-01-18 18:32:02,722 - INFO - Article #20 processed successfully.
+2025-01-19 22:25:44,974 - INFO - Article #23 processed successfully.
 
-2025-01-18 18:32:02,723 - INFO - Parsing article #64: '9 of the 10 Largest Companies in the World Are Making Big Moves Into AI. Here's Why Investors Should Pay Attention.' 
+2025-01-19 22:25:44,976 - INFO - Parsing article #64: 'Trending tickers: Apple, Rivian, Infosys, Duolingo and Rio Tinto' 
 
-2025-01-18 18:32:03,201 - INFO - Article #41 processed successfully.
+2025-01-19 22:25:45,076 - INFO - Article #19 processed successfully.
 
-2025-01-18 18:32:03,202 - INFO - Parsing article #66: 'Apple Loses Ground in Mainland China's Smartphone Market as Huawei and vivo Surge in 2024' 
+2025-01-19 22:25:45,077 - INFO - Parsing article #65: 'The tech CEO PDA for Trump is all about defense: Morning Brief' 
 
-2025-01-18 18:32:04,783 - INFO - Article #34 processed successfully.
+2025-01-19 22:25:45,198 - INFO - Article #8 processed successfully.
 
-2025-01-18 18:32:04,784 - INFO - Parsing article #67: 'TSMC’s Upbeat Outlook Fuels Hopes for 2025 AI Spending' 
+2025-01-19 22:25:45,199 - INFO - Parsing article #66: 'A Look Back at Consumer Electronics Stocks’ Q3 Earnings: Peloton (NASDAQ:PTON) Vs The Rest Of The Pack' 
 
-2025-01-18 18:32:05,011 - INFO - Article #32 processed successfully.
+2025-01-19 22:25:45,768 - INFO - Article #34 processed successfully.
 
-2025-01-18 18:32:05,012 - INFO - Parsing article #69: 'Update: Market Chatter: Apple in Talks With Barclays and Synchrony for Credit Card Partnership' 
+2025-01-19 22:25:45,770 - INFO - Parsing article #69: 'These 3 Companies Generate Serious Cash' 
 
-2025-01-18 18:32:07,330 - INFO - Article #42 processed successfully.
+2025-01-19 22:25:47,447 - INFO - Article #54 processed successfully.
 
-2025-01-18 18:32:07,331 - INFO - Parsing article #71: 'Canalys: Apple Slips in China--Vivo and Huawei Take Lead Amid iPhone Sales Slump' 
+2025-01-19 22:25:47,448 - INFO - Parsing article #71: 'Why Trump saving TikTok isn't so legally simple' 
 
-2025-01-18 18:32:11,369 - INFO - Article #17 processed successfully.
+2025-01-19 22:25:48,369 - INFO - Article #50 processed successfully.
 
-2025-01-18 18:32:11,370 - INFO - Parsing article #72: 'Warren Buffett's Biggest Artificial Intelligence Bets in 2025: 24.8% of Berkshire Hathaway's $292 Billion Stock Portfolio Is in These 2 AI Stocks' 
+2025-01-19 22:25:48,371 - INFO - Parsing article #75: 'Apple Shares Fall 3% After Losing Top Spot in Chinese Market' 
 
-2025-01-18 18:32:13,232 - INFO - Article #45 processed successfully.
+2025-01-19 22:25:48,846 - INFO - Article #38 processed successfully.
 
-2025-01-18 18:32:13,233 - INFO - Parsing article #73: 'Market Chatter: Apple in Talks With Barclays and Synchrony for Credit Card Partnership' 
+2025-01-19 22:25:48,847 - INFO - Parsing article #76: 'Nvidia CEO Will Miss Trump Inauguration, Unlike Many Tech Peers' 
 
-2025-01-18 18:32:14,382 - INFO - Article #46 processed successfully.
+2025-01-19 22:25:48,994 - INFO - Article #56 processed successfully.
 
-2025-01-18 18:32:14,384 - INFO - Parsing article #75: 'Apple's China Nightmare: iPhone Sales Plummet as Huawei Surges -- Is the Empire Cracking?' 
+2025-01-19 22:25:48,996 - INFO - Parsing article #77: 'Why Apple (AAPL) Shares Are Falling Today' 
 
-2025-01-18 18:32:14,511 - INFO - Article #43 processed successfully.
+2025-01-19 22:25:49,531 - INFO - Article #62 processed successfully.
 
-2025-01-18 18:32:14,513 - INFO - Parsing article #76: 'How a TikTok ban would work - and why user workarounds won't' 
+2025-01-19 22:25:49,533 - INFO - Parsing article #80: 'Is Apple Inc. (AAPL) the Best NASDAQ Dividend Stock to Buy?' 
 
-2025-01-18 18:32:16,212 - INFO - Article #50 processed successfully.
+2025-01-19 22:25:49,731 - INFO - Article #52 processed successfully.
 
-2025-01-18 18:32:16,213 - INFO - Parsing article #79: 'This Vanguard ETF Could Be Your Complete Stock Portfolio Solution' 
+2025-01-19 22:25:49,732 - INFO - Parsing article #82: 'Why the tech industry is cozying up to Trump the second time around' 
 
-2025-01-18 18:32:16,257 - INFO - Article #56 processed successfully.
+2025-01-19 22:25:49,758 - INFO - Article #39 processed successfully.
 
-2025-01-18 18:32:16,259 - INFO - Parsing article #80: 'A Perhaps Surprising but Serious Question: Is It Time to Worry About Apple?' 
+2025-01-19 22:25:49,760 - INFO - Parsing article #83: '9 of the 10 Largest Companies in the World Are Making Big Moves Into AI. Here's Why Investors Should Pay Attention.' 
 
-2025-01-18 18:32:18,283 - INFO - Article #67 processed successfully.
+2025-01-19 22:25:50,355 - INFO - Article #58 processed successfully.
 
-2025-01-18 18:32:18,284 - INFO - Parsing article #81: 'Apple trails Huawei, Vivo in China smartphone market in 2024, iPhone leads fourth quarter' 
+2025-01-19 22:25:50,356 - INFO - Parsing article #86: 'Apple Loses Ground in Mainland China's Smartphone Market as Huawei and vivo Surge in 2024' 
 
-2025-01-18 18:32:19,369 - INFO - Article #57 processed successfully.
+2025-01-19 22:25:51,032 - INFO - Article #61 processed successfully.
 
-2025-01-18 18:32:19,371 - INFO - Parsing article #82: 'China’s memory breakthrough and Apple’s first US chips' 
+2025-01-19 22:25:51,034 - INFO - Parsing article #87: 'TSMC’s Upbeat Outlook Fuels Hopes for 2025 AI Spending' 
 
-2025-01-18 18:32:19,810 - INFO - Article #60 processed successfully.
+2025-01-19 22:25:52,548 - INFO - Article #60 processed successfully.
 
-2025-01-18 18:32:19,812 - INFO - Parsing article #83: 'Apple loses smartphone crown in China as Vivo and Huawei outsell iPhone' 
+2025-01-19 22:25:52,549 - INFO - Parsing article #90: 'Update: Market Chatter: Apple in Talks With Barclays and Synchrony for Credit Card Partnership' 
 
-2025-01-18 18:32:21,791 - INFO - Article #66 processed successfully.
+2025-01-19 22:25:53,525 - INFO - Article #42 processed successfully.
 
-2025-01-18 18:32:21,793 - INFO - Parsing article #84: 'A popular congressman just bought these tech stocks' 
+2025-01-19 22:25:53,526 - INFO - Parsing article #91: 'Canalys: Apple Slips in China--Vivo and Huawei Take Lead Amid iPhone Sales Slump' 
 
-2025-01-18 18:32:22,326 - INFO - Article #51 processed successfully.
+2025-01-19 22:25:53,950 - INFO - Article #65 processed successfully.
 
-2025-01-18 18:32:22,328 - INFO - Parsing article #86: 'It’s time for Apple to press pause on its AI news summaries' 
+2025-01-19 22:25:53,951 - INFO - Parsing article #92: 'Warren Buffett's Biggest Artificial Intelligence Bets in 2025: 24.8% of Berkshire Hathaway's $292 Billion Stock Portfolio Is in These 2 AI Stocks' 
 
-2025-01-18 18:32:22,343 - INFO - Article #62 processed successfully.
+2025-01-19 22:25:53,998 - INFO - Article #69 processed successfully.
 
-2025-01-18 18:32:22,345 - INFO - Parsing article #87: 'Apple (AAPL) Laps the Stock Market: Here's Why' 
+2025-01-19 22:25:54,000 - INFO - Parsing article #94: 'Market Chatter: Apple in Talks With Barclays and Synchrony for Credit Card Partnership' 
 
-2025-01-18 18:32:22,463 - INFO - Article #64 processed successfully.
+2025-01-19 22:25:54,254 - INFO - Article #66 processed successfully.
 
-2025-01-18 18:32:22,464 - INFO - Parsing article #91: 'Goldman Sachs Eyes Early Apple Card Exit -- What It Means for Investors and Apple's Ecosystem' 
+2025-01-19 22:25:54,255 - INFO - Parsing article #95: 'Apple's China Nightmare: iPhone Sales Plummet as Huawei Surges -- Is the Empire Cracking?' 
 
-2025-01-18 18:32:22,484 - INFO - Article #54 processed successfully.
+2025-01-19 22:25:55,481 - INFO - Article #53 processed successfully.
 
-2025-01-18 18:32:22,485 - INFO - Parsing article #95: 'Jim Cramer on Apple Inc (AAPL): ‘When You Say That There’s Been No Innovation Since Steve, I Find That Inflammatory’' 
+2025-01-19 22:25:55,482 - INFO - Parsing article #96: 'How a TikTok ban would work - and why user workarounds won't' 
 
-2025-01-18 18:32:23,243 - INFO - Article #69 processed successfully.
+2025-01-19 22:25:55,566 - INFO - Article #64 processed successfully.
 
-2025-01-18 18:32:23,245 - INFO - Parsing article #96: 'The Ultimate High-Yield Dividend ETF to Buy With $500 Right Now' 
+2025-01-19 22:25:55,567 - INFO - Parsing article #98: 'This Vanguard ETF Could Be Your Complete Stock Portfolio Solution' 
 
-2025-01-18 18:32:23,976 - INFO - Article #80 processed successfully.
+2025-01-19 22:25:55,726 - INFO - Article #80 processed successfully.
 
-2025-01-18 18:32:23,977 - INFO - Parsing article #97: 'UK tribunal dismisses reseller collusion allegations against Apple and Amazon' 
+2025-01-19 22:25:55,727 - INFO - Parsing article #99: 'A Perhaps Surprising but Serious Question: Is It Time to Worry About Apple?' 
 
-2025-01-18 18:32:25,047 - INFO - Article #76 processed successfully.
+2025-01-19 22:25:55,934 - INFO - Article #82 processed successfully.
 
-2025-01-18 18:32:25,049 - INFO - Parsing article #98: 'The Best Warren Buffett Stocks to Buy With $1,000 Right Now' 
+2025-01-19 22:25:55,935 - INFO - Parsing article #101: 'Apple trails Huawei, Vivo in China smartphone market in 2024, iPhone leads fourth quarter' 
 
-2025-01-18 18:32:25,983 - INFO - Article #71 processed successfully.
+2025-01-19 22:25:56,245 - INFO - Article #75 processed successfully.
 
-2025-01-18 18:32:25,985 - INFO - Parsing article #99: 'Why you should buy the 493 other S&P 500 stocks — and not the Mag 7' 
+2025-01-19 22:25:56,246 - INFO - Parsing article #102: 'China’s memory breakthrough and Apple’s first US chips' 
 
-2025-01-18 18:32:26,300 - INFO - Article #75 processed successfully.
+2025-01-19 22:25:56,334 - INFO - Article #87 processed successfully.
 
-2025-01-18 18:32:26,301 - INFO - Parsing article #101: 'Apple, Amazon Fend Off UK Class Action Lawsuit Over Alleged Collusion' 
+2025-01-19 22:25:56,335 - INFO - Parsing article #103: 'Apple loses smartphone crown in China as Vivo and Huawei outsell iPhone' 
 
-2025-01-18 18:32:26,315 - INFO - Article #73 processed successfully.
+2025-01-19 22:25:57,831 - INFO - Article #77 processed successfully.
 
-2025-01-18 18:32:26,316 - INFO - Parsing article #102: 'EC to re-evaluate investigations against Apple, Google, and Meta' 
+2025-01-19 22:25:57,832 - INFO - Parsing article #105: 'A popular congressman just bought these tech stocks' 
 
-2025-01-18 18:32:26,475 - INFO - Article #81 processed successfully.
+2025-01-19 22:25:57,858 - INFO - Article #71 processed successfully.
 
-2025-01-18 18:32:26,476 - INFO - Parsing article #103: 'Apple (NASDAQ:AAPL) Seems To Use Debt Rather Sparingly' 
+2025-01-19 22:25:57,859 - INFO - Parsing article #106: 'It’s time for Apple to press pause on its AI news summaries' 
 
-2025-01-18 18:32:26,727 - INFO - Article #72 processed successfully.
+2025-01-19 22:25:58,832 - INFO - Article #76 processed successfully.
 
-2025-01-18 18:32:26,729 - INFO - Parsing article #105: 'Why Apple Stock Could Get Hammered This Year' 
+2025-01-19 22:25:58,833 - INFO - Parsing article #107: 'Apple (AAPL) Laps the Stock Market: Here's Why' 
 
-2025-01-18 18:32:27,321 - INFO - Article #79 processed successfully.
+2025-01-19 22:25:58,844 - INFO - Article #90 processed successfully.
 
-2025-01-18 18:32:27,323 - INFO - Parsing article #106: 'Is Apple Inc. (AAPL) the Best Safe Dividend Stock for 2025?' 
+2025-01-19 22:25:58,846 - INFO - Parsing article #111: 'Goldman Sachs Eyes Early Apple Card Exit -- What It Means for Investors and Apple's Ecosystem' 
 
-2025-01-18 18:32:29,376 - INFO - Article #82 processed successfully.
+2025-01-19 22:25:59,173 - INFO - Article #83 processed successfully.
 
-2025-01-18 18:32:29,377 - INFO - Parsing article #107: 'Apple joins consortium to help develop next-gen AI data center tech' 
+2025-01-19 22:25:59,174 - INFO - Parsing article #114: 'Jim Cramer on Apple Inc (AAPL): ‘When You Say That There’s Been No Innovation Since Steve, I Find That Inflammatory’' 
 
-2025-01-18 18:32:30,096 - INFO - Article #83 processed successfully.
+2025-01-19 22:26:00,833 - INFO - Article #86 processed successfully.
 
-2025-01-18 18:32:30,097 - INFO - Parsing article #109: 'ChatGPT: Everything you need to know about the AI-powered chatbot' 
+2025-01-19 22:26:00,834 - INFO - Parsing article #116: 'The Ultimate High-Yield Dividend ETF to Buy With $500 Right Now' 
 
-2025-01-18 18:32:31,570 - INFO - Article #91 processed successfully.
+2025-01-19 22:26:01,556 - INFO - Article #92 processed successfully.
 
-2025-01-18 18:32:31,571 - INFO - Parsing article #110: 'Analyst reveals top sectors for fourth-quarter earnings growth' 
+2025-01-19 22:26:01,557 - INFO - Parsing article #117: 'UK tribunal dismisses reseller collusion allegations against Apple and Amazon' 
 
-2025-01-18 18:32:31,714 - INFO - Article #84 processed successfully.
+2025-01-19 22:26:02,116 - INFO - Article #95 processed successfully.
 
-2025-01-18 18:32:31,715 - INFO - Parsing article #111: 'Apple Inc. (AAPL)’s Struggle: Can AI Help Regain Market Share in 2025?' 
+2025-01-19 22:26:02,117 - INFO - Parsing article #118: 'The Best Warren Buffett Stocks to Buy With $1,000 Right Now' 
 
-2025-01-18 18:32:31,998 - INFO - Article #96 processed successfully.
+2025-01-19 22:26:02,691 - INFO - Article #101 processed successfully.
 
-2025-01-18 18:32:31,999 - INFO - Parsing article #112: 'Apple, Amazon fight off $600 million UK lawsuit over alleged 'collusion'' 
+2025-01-19 22:26:02,692 - INFO - Parsing article #120: 'Why you should buy the 493 other S&P 500 stocks — and not the Mag 7' 
 
-2025-01-18 18:32:32,845 - INFO - Article #87 processed successfully.
+2025-01-19 22:26:02,809 - INFO - Article #99 processed successfully.
 
-2025-01-18 18:32:32,846 - INFO - Parsing article #113: 'Apple's 'Made in America' Chips: TSMC Arizona Fab Set to Launch Q1 2025' 
+2025-01-19 22:26:02,811 - INFO - Parsing article #121: 'Apple, Amazon Fend Off UK Class Action Lawsuit Over Alleged Collusion' 
 
-2025-01-18 18:32:33,111 - INFO - Article #95 processed successfully.
+2025-01-19 22:26:03,905 - INFO - Article #98 processed successfully.
 
-2025-01-18 18:32:33,113 - INFO - Parsing article #116: 'Fox and Advanced Drainage have been highlighted as Zacks Bull and Bear of the Day' 
+2025-01-19 22:26:03,907 - INFO - Parsing article #122: 'EC to re-evaluate investigations against Apple, Google, and Meta' 
 
-2025-01-18 18:32:33,379 - INFO - Article #86 processed successfully.
+2025-01-19 22:26:04,546 - INFO - Article #103 processed successfully.
 
-2025-01-18 18:32:33,381 - INFO - Parsing article #117: 'Apple's Q1 in Focus: Analyst Warns of Challenges Despite 4% Revenue Growth Forecast' 
+2025-01-19 22:26:04,548 - INFO - Parsing article #124: 'Apple (NASDAQ:AAPL) Seems To Use Debt Rather Sparingly' 
 
-2025-01-18 18:32:33,630 - INFO - Article #101 processed successfully.
+2025-01-19 22:26:04,701 - INFO - Article #96 processed successfully.
 
-2025-01-18 18:32:33,631 - INFO - Parsing article #118: 'Apple Inc. (AAPL) Is a Trending Stock: Facts to Know Before Betting on It' 
+2025-01-19 22:26:04,703 - INFO - Parsing article #125: 'Why Apple Stock Could Get Hammered This Year' 
 
-2025-01-18 18:32:34,198 - INFO - Article #106 processed successfully.
+2025-01-19 22:26:04,913 - INFO - Article #102 processed successfully.
 
-2025-01-18 18:32:34,200 - INFO - Parsing article #120: 'Analyst revisits Apple stock price target ahead of Q1 earnings update' 
+2025-01-19 22:26:04,914 - INFO - Parsing article #126: 'Is Apple Inc. (AAPL) the Best Safe Dividend Stock for 2025?' 
 
-2025-01-18 18:32:34,584 - INFO - Article #97 processed successfully.
+2025-01-19 22:26:05,399 - INFO - Article #107 processed successfully.
 
-2025-01-18 18:32:34,585 - INFO - Parsing article #121: 'Market Chatter: EU to Reassess Probes Into Apple, Meta, Google as Trump Returns to Office' 
+2025-01-19 22:26:05,400 - INFO - Parsing article #127: 'Apple joins consortium to help develop next-gen AI data center tech' 
 
-2025-01-18 18:32:34,766 - INFO - Article #99 processed successfully.
+2025-01-19 22:26:07,197 - INFO - Article #94 processed successfully.
 
-2025-01-18 18:32:34,767 - INFO - Parsing article #122: 'Should You Buy Stock in the Largest Company in the World?' 
+2025-01-19 22:26:07,198 - INFO - Parsing article #128: 'ChatGPT: Everything you need to know about the AI-powered chatbot' 
 
-2025-01-18 18:32:34,986 - INFO - Article #102 processed successfully.
+2025-01-19 22:26:07,447 - INFO - Article #91 processed successfully.
 
-2025-01-18 18:32:34,987 - INFO - Parsing article #124: 'Prediction: This Will Be Wall Street's First $5 Trillion Company -- and It's Not Nvidia' 
+2025-01-19 22:26:07,448 - INFO - Parsing article #129: 'Analyst reveals top sectors for fourth-quarter earnings growth' 
 
-2025-01-18 18:32:35,583 - INFO - Article #103 processed successfully.
+2025-01-19 22:26:07,873 - INFO - Article #114 processed successfully.
 
-2025-01-18 18:32:35,584 - INFO - Parsing article #126: 'Apple leads smartphone market in fourth quarter, overcoming China decline' 
+2025-01-19 22:26:07,874 - INFO - Parsing article #131: 'Apple Inc. (AAPL)’s Struggle: Can AI Help Regain Market Share in 2025?' 
 
-2025-01-18 18:32:35,740 - INFO - Article #98 processed successfully.
+2025-01-19 22:26:07,949 - INFO - Article #106 processed successfully.
 
-2025-01-18 18:32:35,741 - INFO - Parsing article #128: 'EU reassesses tech probes into Apple, Google and Meta, FT reports' 
+2025-01-19 22:26:07,950 - INFO - Parsing article #132: 'Apple, Amazon fight off $600 million UK lawsuit over alleged 'collusion'' 
 
-2025-01-18 18:32:35,913 - INFO - Article #105 processed successfully.
+2025-01-19 22:26:08,918 - INFO - Article #118 processed successfully.
 
-2025-01-18 18:32:35,915 - INFO - Parsing article #131: 'Mark Zuckerberg makes bold accusations against big tech rival' 
+2025-01-19 22:26:08,919 - INFO - Parsing article #133: 'Apple's 'Made in America' Chips: TSMC Arizona Fab Set to Launch Q1 2025' 
 
-2025-01-18 18:32:41,312 - INFO - Article #111 processed successfully.
+2025-01-19 22:26:09,020 - INFO - Article #105 processed successfully.
 
-2025-01-18 18:32:41,313 - INFO - Parsing article #132: 'Apple faces blowback after defending controversial work policy' 
+2025-01-19 22:26:09,021 - INFO - Parsing article #136: 'Fox and Advanced Drainage have been highlighted as Zacks Bull and Bear of the Day' 
 
-2025-01-18 18:32:45,533 - INFO - Article #118 processed successfully.
+2025-01-19 22:26:09,316 - INFO - Article #120 processed successfully.
 
-2025-01-18 18:32:45,535 - INFO - Parsing article #136: 'Sector Update: Tech Stocks Decline Late Afternoon' 
+2025-01-19 22:26:09,318 - INFO - Parsing article #137: 'Apple's Q1 in Focus: Analyst Warns of Challenges Despite 4% Revenue Growth Forecast' 
 
-2025-01-18 18:32:45,562 - INFO - Article #116 processed successfully.
+2025-01-19 22:26:09,523 - INFO - Article #125 processed successfully.
 
-2025-01-18 18:32:45,564 - INFO - Parsing article #139: 'Here’s Why Jim Cramer Thinks Apple (AAPL) Is the Ultimate Free Rider in AI' 
+2025-01-19 22:26:09,524 - INFO - Parsing article #139: 'Apple Inc. (AAPL) Is a Trending Stock: Facts to Know Before Betting on It' 
 
-2025-01-18 18:32:45,644 - INFO - Article #107 processed successfully.
+2025-01-19 22:26:09,696 - INFO - Article #111 processed successfully.
 
-2025-01-18 18:32:45,646 - INFO - Parsing article #140: 'Apple's board recommended shareholders reject DEI rollback proposal' 
+2025-01-19 22:26:09,698 - INFO - Parsing article #140: 'Analyst revisits Apple stock price target ahead of Q1 earnings update' 
 
-2025-01-18 18:32:45,653 - INFO - Article #109 processed successfully.
+2025-01-19 22:26:09,962 - INFO - Article #121 processed successfully.
 
-2025-01-18 18:32:45,655 - INFO - Parsing article #141: 'Zuckerberg Criticizes Apple's Innovation and Practices on Joe Rogan Podcast' 
+2025-01-19 22:26:09,963 - INFO - Parsing article #141: 'Market Chatter: EU to Reassess Probes Into Apple, Meta, Google as Trump Returns to Office' 
 
-2025-01-18 18:32:46,153 - INFO - Article #113 processed successfully.
+2025-01-19 22:26:10,145 - INFO - Article #116 processed successfully.
 
-2025-01-18 18:32:46,154 - INFO - Parsing article #142: 'Apple, Samsung smartphone shipments fall in fourth quarter as China competition bites, IDC says' 
+2025-01-19 22:26:10,146 - INFO - Parsing article #142: 'Should You Buy Stock in the Largest Company in the World?' 
 
-2025-01-18 18:32:46,428 - INFO - Article #120 processed successfully.
+2025-01-19 22:26:12,513 - INFO - Article #126 processed successfully.
 
-2025-01-18 18:32:46,431 - INFO - Parsing article #143: 'Will Apple's Growing China Woes Derail the Stock's Momentum in 2025?' 
+2025-01-19 22:26:12,514 - INFO - Parsing article #143: 'Prediction: This Will Be Wall Street's First $5 Trillion Company -- and It's Not Nvidia' 
 
-2025-01-18 18:32:46,945 - INFO - Article #110 processed successfully.
+2025-01-19 22:26:12,523 - INFO - Article #122 processed successfully.
 
-2025-01-18 18:32:46,946 - INFO - Parsing article #144: 'iPhone Sales Drop 5% in Holiday Quarter After AI Disappoints' 
+2025-01-19 22:26:12,524 - INFO - Parsing article #146: 'Apple leads smartphone market in fourth quarter, overcoming China decline' 
 
-2025-01-18 18:32:47,330 - INFO - Article #131 processed successfully.
+2025-01-19 22:26:12,729 - INFO - Article #127 processed successfully.
 
-2025-01-18 18:32:47,331 - INFO - Parsing article #146: 'Apple CEO's Compensation Set to Rise $10 Million in 2024, Pending Shareholder Vote' 
+2025-01-19 22:26:12,733 - INFO - Parsing article #148: 'EU reassesses tech probes into Apple, Google and Meta, FT reports' 
 
-2025-01-18 18:32:47,713 - INFO - Article #128 processed successfully.
+2025-01-19 22:26:13,073 - INFO - Article #129 processed successfully.
 
-2025-01-18 18:32:47,714 - INFO - Parsing article #148: 'Apple's iPhone Market Share Declines in China, Huawei and Xiaomi Gain Momentum in 2024: Counterpoint' 
+2025-01-19 22:26:13,074 - INFO - Parsing article #151: 'Mark Zuckerberg makes bold accusations against big tech rival' 
 
-2025-01-18 18:32:47,723 - INFO - Article #117 processed successfully.
+2025-01-19 22:26:14,622 - INFO - Article #124 processed successfully.
 
-2025-01-18 18:32:47,725 - INFO - Parsing article #151: 'Apple's new fees for app developers under fresh EU scrutiny, Bloomberg reports' 
+2025-01-19 22:26:14,623 - INFO - Parsing article #152: 'Apple faces blowback after defending controversial work policy' 
 
-2025-01-18 18:32:47,993 - INFO - Article #124 processed successfully.
+2025-01-19 22:26:15,180 - INFO - Article #117 processed successfully.
 
-2025-01-18 18:32:47,994 - INFO - Parsing article #154: 'Market Chatter: Apple Facing Further EU Scrutiny Due to New Fees for App Developers' 
+2025-01-19 22:26:15,182 - INFO - Parsing article #156: 'Sector Update: Tech Stocks Decline Late Afternoon' 
 
-2025-01-18 18:32:48,109 - INFO - Article #126 processed successfully.
+2025-01-19 22:26:15,625 - INFO - Article #140 processed successfully.
 
-2025-01-18 18:32:48,111 - INFO - Parsing article #156: 'Apple Falls to Second Place Globally as Samsung's S24 Dominates Smartphone Market' 
+2025-01-19 22:26:15,626 - INFO - Parsing article #158: 'Here’s Why Jim Cramer Thinks Apple (AAPL) Is the Ultimate Free Rider in AI' 
 
-2025-01-18 18:32:49,180 - INFO - Article #112 processed successfully.
+2025-01-19 22:26:16,089 - INFO - Article #139 processed successfully.
 
-2025-01-18 18:32:49,181 - INFO - Parsing article #157: 'Apple’s New App Fees Spark More EU Scrutiny Under Big Tech Rules' 
+2025-01-19 22:26:16,090 - INFO - Parsing article #159: 'Apple's board recommended shareholders reject DEI rollback proposal' 
 
-2025-01-18 18:32:49,867 - INFO - Article #132 processed successfully.
+2025-01-19 22:26:16,851 - INFO - Article #131 processed successfully.
 
-2025-01-18 18:32:49,869 - INFO - Parsing article #158: 'Exclusive-Tech supplier Arm plans to hike prices, has considered developing its own chips' 
+2025-01-19 22:26:16,852 - INFO - Parsing article #161: 'Zuckerberg Criticizes Apple's Innovation and Practices on Joe Rogan Podcast' 
 
-2025-01-18 18:32:50,528 - INFO - Article #139 processed successfully.
+2025-01-19 22:26:16,977 - INFO - Article #141 processed successfully.
 
-2025-01-18 18:32:50,529 - INFO - Parsing article #159: 'Is Apple Inc. (AAPL) the Best NASDAQ Stock to Buy in 2025?' 
+2025-01-19 22:26:16,979 - INFO - Parsing article #162: 'Apple, Samsung smartphone shipments fall in fourth quarter as China competition bites, IDC says' 
 
-2025-01-18 18:32:50,643 - INFO - Article #122 processed successfully.
+2025-01-19 22:26:17,205 - INFO - Article #133 processed successfully.
 
-2025-01-18 18:32:50,644 - INFO - Parsing article #161: 'Market Chatter: Apple iPhone Sales Fall 5% in Holiday Quarter Amid AI Challenges' 
+2025-01-19 22:26:17,207 - INFO - Parsing article #163: 'Will Apple's Growing China Woes Derail the Stock's Momentum in 2025?' 
 
-2025-01-18 18:32:51,044 - INFO - Article #141 processed successfully.
+2025-01-19 22:26:17,466 - INFO - Article #137 processed successfully.
 
-2025-01-18 18:32:51,045 - INFO - Parsing article #162: 'Apple fights $1.8 billion App Store lawsuit in first of UK class actions against tech giants' 
+2025-01-19 22:26:17,467 - INFO - Parsing article #165: 'iPhone Sales Drop 5% in Holiday Quarter After AI Disappoints' 
 
-2025-01-18 18:32:51,969 - INFO - Article #143 processed successfully.
+2025-01-19 22:26:17,624 - INFO - Article #136 processed successfully.
 
-2025-01-18 18:32:51,970 - INFO - Parsing article #163: 'Apple iPhone Sales Fall 5% in Q4 as Global Market Share Slips' 
+2025-01-19 22:26:17,625 - INFO - Parsing article #166: 'Apple CEO's Compensation Set to Rise $10 Million in 2024, Pending Shareholder Vote' 
 
-2025-01-18 18:32:52,556 - INFO - Article #121 processed successfully.
+2025-01-19 22:26:18,238 - INFO - Article #132 processed successfully.
 
-2025-01-18 18:32:52,558 - INFO - Parsing article #165: 'Trending tickers: Apple, Walgreens, Skechers, GSK and Entain' 
+2025-01-19 22:26:18,239 - INFO - Parsing article #169: 'Apple's iPhone Market Share Declines in China, Huawei and Xiaomi Gain Momentum in 2024: Counterpoint' 
 
-2025-01-18 18:32:52,667 - INFO - Article #140 processed successfully.
+2025-01-19 22:26:20,177 - INFO - Article #156 processed successfully.
 
-2025-01-18 18:32:52,668 - INFO - Parsing article #166: 'Every Stock Warren Buffett Has Said He'd Own Practically Forever' 
+2025-01-19 22:26:20,178 - INFO - Parsing article #171: 'Apple's new fees for app developers under fresh EU scrutiny, Bloomberg reports' 
 
-2025-01-18 18:32:52,685 - INFO - Article #142 processed successfully.
+2025-01-19 22:26:20,606 - INFO - Article #148 processed successfully.
 
-2025-01-18 18:32:52,687 - INFO - Parsing article #167: 'The Zacks Analyst Blog Highlights Apple, Alphabet, Cisco, Hovnanian and Perma-Pipe' 
+2025-01-19 22:26:20,607 - INFO - Parsing article #173: 'Market Chatter: Apple Facing Further EU Scrutiny Due to New Fees for App Developers' 
 
-2025-01-18 18:32:53,380 - INFO - Article #136 processed successfully.
+2025-01-19 22:26:21,434 - INFO - Article #162 processed successfully.
 
-2025-01-18 18:32:53,382 - INFO - Parsing article #169: 'Warren Buffett Is Set to Collect $4.5 Billion in Annual Dividend Income From 7 Magnificent Stocks' 
+2025-01-19 22:26:21,435 - INFO - Parsing article #176: 'Apple Falls to Second Place Globally as Samsung's S24 Dominates Smartphone Market' 
 
-2025-01-18 18:32:53,626 - INFO - Article #144 processed successfully.
+2025-01-19 22:26:21,670 - INFO - Article #143 processed successfully.
 
-2025-01-18 18:32:53,629 - INFO - Parsing article #170: '1 Unstoppable Stock That Could Join Nvidia, Apple, and Microsoft in the $3 Trillion Club in 2025' 
+2025-01-19 22:26:21,671 - INFO - Parsing article #177: 'Apple’s New App Fees Spark More EU Scrutiny Under Big Tech Rules' 
 
-2025-01-18 18:32:53,843 - INFO - Article #146 processed successfully.
+2025-01-19 22:26:21,676 - INFO - Article #142 processed successfully.
 
-2025-01-18 18:32:53,844 - INFO - Parsing article #171: 'Apple’s $1.8bn class action trial in UK to begin' 
+2025-01-19 22:26:21,678 - INFO - Parsing article #178: 'Exclusive-Tech supplier Arm plans to hike prices, has considered developing its own chips' 
 
-2025-01-18 18:32:53,874 - INFO - Article #154 processed successfully.
+2025-01-19 22:26:22,250 - INFO - Article #128 processed successfully.
 
-2025-01-18 18:32:53,876 - INFO - Parsing article #172: 'Apple's iPhone Market Share Slips to 18% Amid Rising Competition' 
+2025-01-19 22:26:22,251 - INFO - Parsing article #180: 'Is Apple Inc. (AAPL) the Best NASDAQ Stock to Buy in 2025?' 
 
-2025-01-18 18:32:54,484 - INFO - Article #156 processed successfully.
+2025-01-19 22:26:22,598 - INFO - Article #152 processed successfully.
 
-2025-01-18 18:32:54,486 - INFO - Parsing article #174: 'Top plays among the 'Magnificent 7' and Big Tech stocks as Trump returns to the White House' 
+2025-01-19 22:26:22,600 - INFO - Parsing article #181: 'Market Chatter: Apple iPhone Sales Fall 5% in Holiday Quarter Amid AI Challenges' 
 
-2025-01-18 18:32:54,975 - INFO - Article #148 processed successfully.
+2025-01-19 22:26:23,224 - INFO - Article #146 processed successfully.
 
-2025-01-18 18:32:54,983 - INFO - Article #151 processed successfully.
+2025-01-19 22:26:23,225 - INFO - Parsing article #182: 'Apple fights $1.8 billion App Store lawsuit in first of UK class actions against tech giants' 
 
-2025-01-18 18:32:56,521 - INFO - Article #162 processed successfully.
+2025-01-19 22:26:24,159 - INFO - Article #159 processed successfully.
 
-2025-01-18 18:32:56,630 - INFO - Article #157 processed successfully.
+2025-01-19 22:26:24,161 - INFO - Parsing article #184: 'Apple iPhone Sales Fall 5% in Q4 as Global Market Share Slips' 
 
-2025-01-18 18:32:57,941 - INFO - Article #158 processed successfully.
+2025-01-19 22:26:25,542 - INFO - Article #173 processed successfully.
 
-2025-01-18 18:32:58,653 - INFO - Article #161 processed successfully.
+2025-01-19 22:26:25,544 - INFO - Parsing article #185: 'Trending tickers: Apple, Walgreens, Skechers, GSK and Entain' 
 
-2025-01-18 18:32:58,795 - INFO - Article #163 processed successfully.
+2025-01-19 22:26:25,552 - INFO - Article #166 processed successfully.
 
-2025-01-18 18:32:58,941 - INFO - Article #159 processed successfully.
+2025-01-19 22:26:25,555 - INFO - Parsing article #186: 'Every Stock Warren Buffett Has Said He'd Own Practically Forever' 
 
-2025-01-18 18:33:00,175 - INFO - Article #167 processed successfully.
+2025-01-19 22:26:25,880 - INFO - Article #151 processed successfully.
 
-2025-01-18 18:33:00,556 - INFO - Article #165 processed successfully.
+2025-01-19 22:26:25,882 - INFO - Parsing article #187: 'The Zacks Analyst Blog Highlights Apple, Alphabet, Cisco, Hovnanian and Perma-Pipe' 
 
-2025-01-18 18:33:00,981 - INFO - Article #169 processed successfully.
+2025-01-19 22:26:26,476 - INFO - Article #163 processed successfully.
 
-2025-01-18 18:33:01,200 - INFO - Article #172 processed successfully.
+2025-01-19 22:26:26,478 - INFO - Parsing article #188: 'Warren Buffett Is Set to Collect $4.5 Billion in Annual Dividend Income From 7 Magnificent Stocks' 
 
-2025-01-18 18:33:01,416 - INFO - Article #171 processed successfully.
+2025-01-19 22:26:26,511 - INFO - Article #178 processed successfully.
 
-2025-01-18 18:33:01,564 - INFO - Article #170 processed successfully.
+2025-01-19 22:26:26,512 - INFO - Parsing article #189: '1 Unstoppable Stock That Could Join Nvidia, Apple, and Microsoft in the $3 Trillion Club in 2025' 
 
-2025-01-18 18:33:01,600 - INFO - Article #174 processed successfully.
+2025-01-19 22:26:27,204 - INFO - Article #161 processed successfully.
 
-2025-01-18 18:33:01,615 - INFO - Article #166 processed successfully.
+2025-01-19 22:26:27,206 - INFO - Parsing article #191: 'Apple’s $1.8bn class action trial in UK to begin' 
 
-2025-01-18 18:33:01,618 - INFO - Converting data to CSV.
-2025-01-18 18:33:01,640 - INFO - Appended new data to existing CSV.
-2025-01-18 18:33:01,640 - INFO - Scraping completed for AAPL.
-2025-01-18 18:33:01,640 - INFO - Scraper completed successfully.
+2025-01-19 22:26:27,986 - INFO - Article #181 processed successfully.
+
+2025-01-19 22:26:27,988 - INFO - Parsing article #192: 'Apple's iPhone Market Share Slips to 18% Amid Rising Competition' 
+
+2025-01-19 22:26:28,264 - INFO - Article #169 processed successfully.
+
+2025-01-19 22:26:28,265 - INFO - Parsing article #195: 'Top plays among the 'Magnificent 7' and Big Tech stocks as Trump returns to the White House' 
+
+2025-01-19 22:26:28,803 - INFO - Article #176 processed successfully.
+
+2025-01-19 22:26:28,805 - INFO - Parsing article #196: 'The blunt truth on Nvidia, the 'Magnificent 7,' and markets' 
+
+2025-01-19 22:26:28,814 - INFO - Article #165 processed successfully.
+
+2025-01-19 22:26:28,815 - INFO - Parsing article #197: 'Apple Is the Largest Company in the World. Here's Why Investors Should Be Wary of the Stock in 2025.' 
+
+2025-01-19 22:26:29,224 - INFO - Article #182 processed successfully.
+
+2025-01-19 22:26:29,225 - INFO - Parsing article #199: 'Meet the Incredible Artificial Intelligence (AI) Stock That Could Pass Apple, Nvidia, and Microsoft on Its Way to a $5 Trillion Valuation by 2030' 
+
+2025-01-19 22:26:29,268 - INFO - Article #171 processed successfully.
+
+2025-01-19 22:26:29,269 - INFO - Parsing article #200: 'Apple's board recommends shareholders vote against proposal to eliminate diversity programs' 
+
+2025-01-19 22:26:29,502 - INFO - Article #177 processed successfully.
+
+2025-01-19 22:26:29,503 - INFO - Parsing article #201: 'Mark Zuckerberg slams Apple on innovation during Joe Rogan podcast — ‘They haven’t invented anything great in a while’' 
+
+2025-01-19 22:26:32,462 - INFO - Article #188 processed successfully.
+
+2025-01-19 22:26:32,463 - INFO - Parsing article #202: 'Here Are the Top 5 "Magnificent Seven" Stocks to Buy in 2025, According to 1 Wall Street Analyst' 
+
+2025-01-19 22:26:33,545 - INFO - Article #180 processed successfully.
+
+2025-01-19 22:26:33,547 - INFO - Parsing article #206: '4 ways Apple should upgrade its privacy and security game in 2025' 
+
+2025-01-19 22:26:34,029 - INFO - Article #158 processed successfully.
+
+2025-01-19 22:26:34,030 - INFO - Parsing article #207: '2 Popular AI Stocks to Sell Before They Drop 24% and 66% in 2025, According to Certain Wall Street Analysts' 
+
+2025-01-19 22:26:34,835 - INFO - Article #189 processed successfully.
+
+2025-01-19 22:26:34,836 - INFO - Parsing article #208: 'Could Investing $1,000 in Apple Make You a Millionaire?' 
+
+2025-01-19 22:26:35,367 - INFO - Article #186 processed successfully.
+
+2025-01-19 22:26:35,368 - INFO - Parsing article #210: 'Best Stock to Buy Right Now: Amazon vs. Apple' 
+
+2025-01-19 22:26:35,856 - INFO - Article #196 processed successfully.
+
+2025-01-19 22:26:35,857 - INFO - Parsing article #215: 'Apple CEO Pay Rises 18%; Company Opposes Anti-Diversity Measure' 
+
+2025-01-19 22:26:35,919 - INFO - Article #185 processed successfully.
+
+2025-01-19 22:26:35,921 - INFO - Parsing article #217: 'Top Research Reports for Apple, Alphabet & Cisco' 
+
+2025-01-19 22:26:35,978 - INFO - Article #192 processed successfully.
+
+2025-01-19 22:26:35,979 - INFO - Parsing article #223: 'Apple's eSIM-Only Foldable iPhone Could Impact 2025 Sales, Says Analyst' 
+
+2025-01-19 22:26:36,552 - INFO - Article #200 processed successfully.
+
+2025-01-19 22:26:36,554 - INFO - Parsing article #225: 'Nvidia Poised to Dethrone Apple as Market Cap Leader by 2025' 
+
+2025-01-19 22:26:36,566 - INFO - Article #197 processed successfully.
+
+2025-01-19 22:26:36,567 - INFO - Parsing article #226: 'TSMC Sales Beat Estimates in Boost for AI’s Outlook in 2025' 
+
+2025-01-19 22:26:37,180 - INFO - Article #201 processed successfully.
+
+2025-01-19 22:26:37,181 - INFO - Parsing article #227: 'What Does Apple Inc.'s (NASDAQ:AAPL) Share Price Indicate?' 
+
+2025-01-19 22:26:37,250 - INFO - Article #199 processed successfully.
+
+2025-01-19 22:26:37,251 - INFO - Parsing article #230: 'Nvidia stock sell-off: Time to back up the truck?' 
+
+2025-01-19 22:26:37,323 - INFO - Article #184 processed successfully.
+
+2025-01-19 22:26:37,324 - INFO - Parsing article #231: 'Apple vs. Nvidia: Which Artificial Intelligence (AI) Stock Will Perform Better Under Trump's Looming Tariffs?' 
+
+2025-01-19 22:26:38,517 - INFO - Article #187 processed successfully.
+
+2025-01-19 22:26:38,518 - INFO - Parsing article #232: 'Is Apple Inc. (AAPL) the Best Blue Chip Stock to Buy for 2025?' 
+
+2025-01-19 22:26:39,867 - INFO - Article #202 processed successfully.
+
+2025-01-19 22:26:39,868 - INFO - Parsing article #233: 'Prediction: This AI Company Will Be the Most Valuable in the World by the End of 2025' 
+
+2025-01-19 22:26:40,077 - INFO - Article #195 processed successfully.
+
+2025-01-19 22:26:40,078 - INFO - Parsing article #234: '80% of Warren Buffett's $297 Billion Portfolio Is Invested in These 9 Unstoppable Stocks in 2025' 
+
+2025-01-19 22:26:42,829 - INFO - Article #231 processed successfully.
+
+2025-01-19 22:26:42,830 - INFO - Parsing article #236: 'Apple forms Shanghai data-processing venture as AI push in China still in limbo' 
+
+2025-01-19 22:26:44,756 - INFO - Article #225 processed successfully.
+
+2025-01-19 22:26:44,757 - INFO - Parsing article #237: 'Bitcoin ETFs and the race to institutionalise crypto' 
+
+2025-01-19 22:26:44,979 - INFO - Article #191 processed successfully.
+
+2025-01-19 22:26:44,980 - INFO - Parsing article #238: 'Apple Clarifies Siri Privacy Policy After $95 Million Settlement Over Allegations Of Unauthorized Recordings' 
+
+2025-01-19 22:26:45,169 - INFO - Article #227 processed successfully.
+
+2025-01-19 22:26:45,170 - INFO - Parsing article #240: 'Apple (AAPL) Surpasses Market Returns: Some Facts Worth Knowing' 
+
+2025-01-19 22:26:45,436 - INFO - Article #232 processed successfully.
+
+2025-01-19 22:26:45,437 - INFO - Parsing article #241: 'Google, Microsoft, Meta, Apple: Here’s a list of Big Tech companies and CEOs donating millions to the Trump inauguration' 
+
+2025-01-19 22:26:45,467 - INFO - Article #215 processed successfully.
+
+2025-01-19 22:26:45,469 - INFO - Parsing article #244: 'Is Apple Inc. (AAPL) the Best Technology Stock to Invest In for the Long Term' 
+
+2025-01-19 22:26:45,807 - INFO - Article #234 processed successfully.
+
+2025-01-19 22:26:45,808 - INFO - Parsing article #245: 'Doublepoint launches free Apple Watch app to control devices with hand gestures' 
+
+2025-01-19 22:26:45,837 - INFO - Article #207 processed successfully.
+
+2025-01-19 22:26:45,839 - INFO - Parsing article #246: 'Barclays Sees Mixed Start for Apple in 2025 Amid Regulatory and Geopolitical Challenges' 
+
+2025-01-19 22:26:45,875 - INFO - Article #208 processed successfully.
+
+2025-01-19 22:26:45,876 - INFO - Parsing article #247: 'Microsoft, Google, Adobe Give $1 Million Each to Trump Inaugural Fund' 
+
+2025-01-19 22:26:45,903 - INFO - Article #226 processed successfully.
+
+2025-01-19 22:26:46,743 - INFO - Article #217 processed successfully.
+
+2025-01-19 22:26:47,090 - INFO - Article #210 processed successfully.
+
+2025-01-19 22:26:47,476 - INFO - Article #236 processed successfully.
+
+2025-01-19 22:26:48,678 - INFO - Article #223 processed successfully.
+
+2025-01-19 22:26:48,906 - INFO - Article #233 processed successfully.
+
+2025-01-19 22:26:49,254 - INFO - Article #230 processed successfully.
+
+2025-01-19 22:26:49,709 - INFO - Article #206 processed successfully.
+
+2025-01-19 22:26:50,312 - INFO - Article #241 processed successfully.
+
+2025-01-19 22:26:50,344 - INFO - Article #237 processed successfully.
+
+2025-01-19 22:26:51,134 - INFO - Article #244 processed successfully.
+
+2025-01-19 22:26:51,180 - INFO - Article #240 processed successfully.
+
+2025-01-19 22:26:51,226 - INFO - Article #247 processed successfully.
+
+2025-01-19 22:26:51,236 - INFO - Article #238 processed successfully.
+
+2025-01-19 22:26:51,461 - INFO - Article #245 processed successfully.
+
+2025-01-19 22:26:52,314 - INFO - Article #246 processed successfully.
+
+2025-01-19 22:26:52,315 - INFO - Converting data to CSV.
+2025-01-19 22:26:52,377 - INFO - Starting data preprocessing.
+2025-01-19 22:26:52,377 - INFO - Removing duplicates
+2025-01-19 22:26:52,378 - INFO - Sorting the data based on the date of publication.
+2025-01-19 22:26:52,378 - INFO - We now have #1246 articles.
+2025-01-19 22:26:52,378 - INFO - Data preprocessing completed.
+2025-01-19 22:26:52,479 - INFO - Updated CSV file with new data.
+2025-01-19 22:26:52,481 - INFO - Scraping completed for AAPL.
+2025-01-19 22:26:52,481 - INFO - Scraper completed successfully.

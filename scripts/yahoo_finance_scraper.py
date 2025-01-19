@@ -153,15 +153,16 @@ def preProcess(df):
     df.drop_duplicates(subset='article_title', keep='first', inplace=True)
 
     # Sorting DataFrame based on the 'Date' column in reverse order
-    logging.info("Sorting the the data based on the data of publication.")
+    logging.info("Sorting the data based on the date of publication.")
     df= df.sort_values(by='Date', ascending=False)
 
     # Converting the 'Date' column to datetime format because errors='coerce' will turn invalid parsing to NaT
-    df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+    #df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
 
     # Filtering out rows with valid dates (non-NaT)
-    df= df.dropna(subset=['Date'])
-    
+    #df= df.dropna(subset=['Date'])
+
+    logging.info(f"We now have #{df.shape[0]} articles.")
     logging.info("Data preprocessing completed.")
     return df
 
@@ -170,31 +171,59 @@ def turnToCSV():
     Converting the collected news data into a dataframe and then into a csv file,
     while handling duplicates and cleaning the data.
     """
+    # logging.info("Converting data to CSV.")
+    # new_data = pd.DataFrame(allNews)
+    # print(f"New data: {new_data}")
+
+    # try:
+    #     # Check if the file exists
+    #     with open('data/News.csv', 'r') as file:
+    #         pass
+    #     # Append data without headers
+    #     new_data.to_csv('data/News.csv', mode='a', header=False, index=False)
+    #     logging.info("Appended new data to existing CSV.")
+    #     # df=pd.read_csv('data/News.csv')
+    #     # cleaned_df=preProcess(df)
+    #     # cleaned_df.to_csv('data/News.csv',index=False)
+
+    # except FileNotFoundError:
+    #     # File does not exist, create it with headers
+    #     new_data.to_csv('data/News.csv', mode='w', index=False)
+    #     logging.info("Created new CSV file and saved data.")
     logging.info("Converting data to CSV.")
     new_data = pd.DataFrame(allNews)
-    print(f"New data: {new_data}")
-
     try:
-        # Check if the file exists
-        with open('data/News.csv', 'r') as file:
-            pass
-        # Append data without headers
-        new_data.to_csv('data/News.csv', mode='a', header=False, index=False)
-        logging.info("Appended new data to existing CSV.")
+        print("hello 1")
+        # Read existing data if the file exists
+        existing_data = pd.read_csv('data/News.csv')
+        #new_data.to_csv('data/News.csv', mode='a', header=False, index=False)
+        # Combine existing data with new data
+        combined_data = pd.concat([existing_data, new_data], ignore_index=True)
+        #data=pd.read_csv("data/News.csv")
+        cleaned_data=preProcess(combined_data)
+        cleaned_data.to_csv('data/News.csv',index=False)
+        # Write back to the CSV file
+        #new_data.to_csv('data/News.csv', mode='a', header=False, index=False)
+        #cleaned_data.to_csv('data/News.csv', index=False)
+        logging.info("Updated CSV file with new data.")
+
     except FileNotFoundError:
-        # File does not exist, create it with headers
-        new_data.to_csv('data/News.csv', mode='w', index=False)
+        # If file does not exist, create it
+        print("hello")
+        new_data.to_csv('data/News.csv', index=False)
         logging.info("Created new CSV file and saved data.")
 
 
 def scrape(ticker_url):
     ticker_symbol, url = ticker_url
     logging.info(f"Scraping started for {ticker_symbol} at {url}")
-    articles = extractNews(openWebPage(url), 150)
+    articles = extractNews(openWebPage(url), 300)
     with concurrent.futures.ThreadPoolExecutor() as executor:
         for i, article in enumerate(articles):
             executor.submit(fetchNewsInfo, article, ticker_symbol, i + 1)  # Pass article number
     turnToCSV()
+    allNews=[]
+    #preProcess()
     logging.info(f"Scraping completed for {ticker_symbol}.")
 
 
