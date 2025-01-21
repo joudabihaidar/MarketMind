@@ -244,3 +244,4 @@ if __name__ == "__main__":
         logging.info("Scraper completed successfully.")
     except Exception as e:
         logging.error(f"Scraper encountered an error: {e}")
+        
